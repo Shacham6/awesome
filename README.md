@@ -72,35 +72,34 @@ This is more for me, but if you find this list useful, cheers.
 - **[black](https://github.com/psf/black)** - The currently most popular automatic formatter for Python. Really rigid, but that's a "feature". 
 - **PyPerf** - Toolkit to write, run and analyze benchmarks. Same idea as `Py-Spy`, but from kernel-space. 
 - **py-spy** - sampling profiler for Python programs. 
-## lint
+## Linter
 - **[Flake8](https://flake8.pycqa.org/en/latest/)** - A popular Python linter that's more focused on coding conventions. 
 - **[Bandit](https://github.com/PyCQA/bandit)** - A security linter from PyCQA 
-### pylints
+### Pylint
 - **[pylint](https://pylint.pycqa.org/en/latest/index.html)** - The pretty-much most popular linter for Python. Is __very__ involved in the code. Will be effective **only if used pragmatically**. 
-### pylint
 - **[Pylint Message Control](https://pylint.pycqa.org/en/latest/user_guide/messages/message_control.html)**
-## security
+## Security
 - **[PyUP](https://pyup.io/)** - Python Dependency Security real-time service. Kinda like `snyk` from my understanding. 
-## files
+## Files and Filesystem
 - **[watchfiles](https://pypi.org/project/watchfiles/)** - A package to watch changes in local directory. 
 - **[magicalimport](https://pypi.org/project/magicalimport/)** - Importing a module from physical file path. 
 - **[pox](https://pypi.org/project/pox/)** - A collection of utilities for navigating and manipulating filesystems. 
 - **[pathspec](https://pypi.org/project/pathspec/)** - A utility library for pattern matching of file paths. So far this only includes Git’s wildmatch pattern matching which itself is derived from Rsync’s wildmatch. 
-## docs
+## Documentation
 - **[interrogate](https://github.com/econchick/interrogate)** - Validates that all of the things are documented? 
 ### mkdocs
 - **[mkdocs](https://github.com/mkdocs/mkdocs)** - The best documentation generator for Programming Projects. Written in Python. Has a sweet GitHub-Pages integration. 
 - **[mkdocstrings](https://github.com/mkdocstrings/mkdocstrings)** - Automatic documentation from sources, for MkDocs. 
 - **[mkdocs-click](https://pypi.org/project/mkdocs-click/)** - Generate mkdocs pages from `click` apps. 
-## tasks
+## Tasks and Task Management
 - **[huey](https://github.com/coleifer/huey)** - A small Task-Queue for Python 
 - **[pathos](https://pathos.readthedocs.io/en/latest/index.html)** - _"parallel graph management and execution in heterogeneous computing"_ 
 - **[rocketry](https://github.com/Miksus/rocketry)** - A scheduling framework for Python. Strives for simplicity. 
-## refactoring
+## Refactoring
 - **[pasta](https://github.com/google/pasta)** - A Python refactoring tool based on the `ast` module. Comes in the form of an SDK. 
-## meta
+## Meta / Tracing
 - **[objgraph](https://mg.pov.lt/objgraph/)** - A module that lets you visually explore Python object graphs. 
-## app
+## Applications
 - **[dunk](https://github.com/darrenburns/dunk)** - Prettier git diffs. 
 - **[mypyc](https://mypyc.readthedocs.io/en/latest/getting_started.html#installation)** - Compiled Python code to a Python extension. Based on type hinting. Seems to actually work! 
 - **[Pokete](https://github.com/lxgr-linux/pokete)** - It's a Pokemon, but in a terminal. 
