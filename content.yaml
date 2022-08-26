@@ -3,6 +3,9 @@ python:
   description: |
     Python related resources
 
+cli:
+  name: Command-Line Interface
+
 tui:
   name: TUI (Terminal UI)
   description: |
@@ -10,17 +13,354 @@ tui:
 
 testing:
   name: Testing
-  description: |
-    Resources to help with the process of testing your code.
----
-- name: rich
-  link: https://rich.readthedocs.io/en/stable/introduction.html
-  tags: [python, tui]
   description: >
-    Create beautiful CLI's using Python.
+    Resources to help with the process of testing your code.
+
+guides:
+  name: Guides
+
+setuptools:
+  name: Setup-Tools
+  description: Python's most popular build system.
+
+awesome-list:
+  name: Awesome-Lists
+  description: An aggregation of cool resources relating to a subject.
+
+misc:
+  name: Misc.
+  description: Stuff that didn't really fit in anywhere else.
+
+metaprogramming:
+  name: Meta-Programming
+
+functional-programming:
+  name: Functional Programming
+
+http:
+  name: HTTP
+
+client:
+  name: Clients
+
+server:
+  name: Server
+
+data-science:
+  name: Data Science
+
+data-serialization:
+  name: Data Serialization
+
+pytest-plugins:
+  name: Pytest Plugins
+
+profiler:
+  name: Profilers
+
+---
+- name: Python Enchancement Proposals - Index
+  link: https://peps.python.org/
+  tags: [python]
+
+# - name: rich
+#   link: https://rich.readthedocs.io/en/stable/introduction.html
+#   tags: [python, tui]
+#   description: >
+#     Create beautiful CLI's using Python.
+
+# - name: pytest
+#   link: https://docs.pytest.org/en/7.1.x/
+#   tags: [python, testing]
+#   description: >
+# The most popular Python testing framework.
+
+- name: fstring.help
+  link: https://fstring.help
+  description: A cheat-sheet website which provides insight towards the stuff possible with f-strings
+  tags: [python, guides]
+
+- name: How to build a package with `pyproject.toml` (setuptools)
+  link: https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+  tags: [python, guides, setuptools]
+
+- name: How to build a package with `setup.cfg` (setuptools)
+  link: https://setuptools.pypa.io/en/latest/userguide/declarative_config.html
+  tags: [python, guides, setuptools]
+
+- name: Python File Modes Explanations
+  link: https://stackoverflow.com/a/23566951
+  tags: [python, guides]
+  description: >
+    All those `r w a r+ w+`, blah blah blah? An explanation for _those_.
+
+- name: "Type Theory: Type Variance in Python"
+  link: https://rednafi.github.io/reflections/variance-of-generic-types-in-python.html
+  tags: [python, guides]
+
+- name: What's dictproxy?
+  link: https://stackoverflow.com/questions/25440694/whats-the-purpose-of-dictproxy
+  tags: [python, guides]
+
+- name: Instagram - Copy-on-write friendly Python garbage collection
+  link: https://instagram-engineering.com/copy-on-write-friendly-python-garbage-collection-ad6ed5233ddf
+  tags: [python, guides]
+
+- name: "Python Decorators - Cool Example Tweet"
+  link: https://twitter.com/nedbat/status/1543933895514591237?t=4jd5Q3dKPkOC6lsREeklQA&s=09
+  tags: [python, guides]
+
+- name: Awesome Python AST
+  link: https://github.com/gyermolenko/awesome-python-ast
+  tags: [python, awesome-list]
+
+- name: Classifiers List
+  description: An actual list of all legitimate classifiers to be used in Python packages.
+  link: https://pypi.org/pypi?%3Aaction=list_classifiers
+  tags: [python, misc]
+
+- name: undataclass
+  link: https://www.pythonmorsels.com/undataclass/?s=09
+  description: Given a definitions of `dataclasses.dataclass`, expose the generated source-code.
+  tags: [python, misc]
+
+- name: C vs Golang Python extension performance
+  link: https://ipdata.co/blog/c-vs-golang-python-extensions/
+  tags: [python, misc]
+
+- name: The Bas Steins newsletter
+  description: A newsletter that mentions multiple Python GitHub repositories. Like weekly "trending" for Python.
+  link: https://bas.codes/
+  tags: [python, misc]
+
+- name: ast_selector
+  description: A package which allows __CSS selector style__ querying on Python AST's
+  link: https://github.com/guilatrova/ast_selector
+  tags: [python, metaprogramming]
+
+- name: datamodel-code-generator
+  description: Generates python code from schemas.
+  link: https://github.com/koxudaxi/datamodel-code-generator
+  tags: [python, metaprogramming]
+
+- name: Pipe
+  link: https://github.com/JulienPalard/Pipe
+  description: A Python library to use infix notations in Python
+  tags: [python, functional-programming]
+
+- name: Rich
+  description: Make beautiful CLI applications, very easily.
+  link: https://github.com/Textualize/rich
+  tags: [python, cli]
+
+- name: Textual
+  description: A TUI abstraction over Rich. Looks awesome!
+  link: https://github.com/Textualize/textual
+  tags: [python, tui]
+
+- name: httpx
+  description: My favorite http client.
+  link: https://www.python-httpx.org/
+  tags: [python, http, client]
+
+- name: requests
+  description: The most known HTTP client for Python.
+  link: https://pypi.org/project/requests/
+  tags: [python, http, client]
+
+- name: aiohttp
+  description: Another popular http package w/ async support.
+  link: https://docs.aiohttp.org/en/stable/
+  tags: [python, http, client]
+
+- name: FastAPI
+  description: |
+    The most popular modern HTTP framework for Python as far as I know.
+      - Supports OpenAPI generation and stuff.
+      - Fast w/ async support.
+      - Integrates well with Pydantic.
+  link: https://fastapi.tiangolo.com/
+  tags: [python, http, server]
+
+- name: streamlit
+  description: Let's you turn data scripts into sharable web apps. Not a self-hosted service.
+  link: https://github.com/streamlit/streamlit
+  tags: [python, data-science]
+
+- name: Pydantic
+  link: https://pydantic-docs.helpmanual.io/
+  description: The most popular data-serialization framework for Python, as far as I know.
+  tags: [python, data-serialization]
+
+- name: prestring
+  description: A utility package to generate valid Pythonic Source-Code.
+  link: https://pypi.org/project/prestring/
+  tags: [python, metaprogramming]
+
+- name: dill
+  link: https://pypi.org/project/dill/
+  description: An extension of python's `pickle` module. Pretty popular.
+  tags: [python, data-serialization]
+
+- name: oyaml
+  link: https://github.com/wimglenn/oyaml
+  description: YAML package that maintains the order of keys
+  tags: [python, data-serialization, yaml]
 
 - name: pytest
   link: https://docs.pytest.org/en/7.1.x/
+  description: The de-facto testing framework for Python
   tags: [python, testing]
+
+- name: pytest-monitor
+  link: https://pypi.org/project/pytest-monitor/
+  tags: [python, testing, pytest-plugins]
+
+- name: pytest-profiling
+  link: https://github.com/man-group/pytest-plugins/tree/master/pytest-profiling
+  tags: [python, testing, pytest-plugins]
+
+- name: Awesome Pytest
+  description: A list of `pytest` resources.
+  link: https://github.com/augustogoulart/awesome-pytest
+  tags: [python, testing, pytest-plugins]
+
+- name: pytest-subsets
+  description: Looks like a way to "split" a test into "segments"; With each being reported separately.
+  link: https://github.com/pytest-dev/pytest-subtests
+  tags: [pytest, testing, pytest-plugins]
+
+- name: pytest-benchmark
+  link: https://github.com/ionelmc/pytest-benchmark
+  tags: [python, testing, pytest-plugins]
+
+- name: ward
+  description: An interesting, alternative testing-framework for Python. All things considered I'd have preferred this one if pytest wasn't already the clear winner..
+  link: https://github.com/darrenburns/ward
+  tags: [python, testing]
+
+- name: memray
+  link: https://github.com/bloomberg/memray
   description: >
-    The most popular Python testing framework.
+    A suddenly incredibly popular memory profiler.
+    It was initially private as far as I know, and soon after it was released to the public it became immensely popular, very quickly.
+  tags: [python, profiler]
+
+- name: line-profiler
+  link: https://pypi.org/project/line-profiler/
+  tags: [python, profiler]
+
+- name: memory-profiler
+  link: https://pypi.org/project/memory-profiler
+  tags: [python, profiler]
+
+
+- name: black
+  link: https://github.com/psf/black
+  description: >
+    The currently most popular automatic formatter for Python.
+    Really rigid, but that's a "feature".
+  tags: [python, profiler]
+
+
+  # - Packages
+  #         - Profilers
+  #             - [memray]()
+  #               ==NOTE==: **Works only on Linux!**
+
+  #             - [line-profiler]()
+  #             - [memory-profiler]()
+  #             - PyPerf
+  #               Toolkit to write, run and analyze benchmarks. Same idea as `Py-Spy`, but from kernel-space.
+  #             - py-spy
+  #               sampling profiler for Python programs.
+  #         - Formatters
+  #             - [black](https://github.com/psf/black)
+  #         - Linters
+  #             - [Pylint](https://pylint.pycqa.org/en/latest/index.html)
+  #               The pretty-much most popular linter for Python. Is __very__ involved in the code.
+  #               Will be effective **only if used pragmatically**.
+  #                 - [Pylint Message Control](https://pylint.pycqa.org/en/latest/user_guide/messages/message_control.html)
+  #             - [Flake8](https://flake8.pycqa.org/en/latest/)
+  #               A popular Python linter that's more focused on coding conventions.
+  #         - Security
+  #             - Real-Time services
+  #                 - [PyUP | Python Dependency Security](https://pyup.io/)
+  #                   A company that keeps dependencies up-to-date and ensures security and such. Like `snyk`, kinda.
+  #             - Apps
+  #                 - [Bandit](https://github.com/PyCQA/bandit)
+  #                   A security linter from PyCQA
+  #     - Files
+  #         - [watchfiles](https://pypi.org/project/watchfiles/)
+  #           A package to watch changes in local directory.
+  #         - [magicalimport](https://pypi.org/project/magicalimport/)
+  #           Importing a module from physical file path.
+  #         - [pox](https://pypi.org/project/pox/)
+  #           A collection of utilities for navigating and manipulating filesystems.
+  #         - [pathspec](https://pypi.org/project/pathspec/)
+  #           A utility library for pattern matching of file paths. So far this only includes Git’s wildmatch pattern matching which itself is derived from Rsync’s wildmatch.
+  #     - Documentation
+  #         - [mkdocs](https://github.com/mkdocs/mkdocs)
+  #           The best documentation generator for Programming Projects.
+  #           Written in Python. Has a sweet GitHub-Pages integration.
+  #             - [mkdocstrings](https://github.com/mkdocstrings/mkdocstrings)
+  #               Automatic documentation from sources, for MkDocs.
+  #             - [mkdocs-click](https://pypi.org/project/mkdocs-click/)
+  #               Generate mkdocs pages from `click` apps.
+  #         - [interrogate](https://github.com/econchick/interrogate)
+  #           Validates that all of the things are documented?
+  #     - Tasks
+  #         - [huey](https://github.com/coleifer/huey)
+  #           A small Task-Queue for Python
+  #         - [pathos](https://pathos.readthedocs.io/en/latest/index.html)
+  #           __"parallel graph management and execution in heterogeneous computing"__
+  #           Sounds like a `dependency-tree`.
+  #         - [rocketry](https://github.com/Miksus/rocketry)
+  #           A scheduling framework for Python. Strives for simplicity.
+  #     - Refactoring
+  #         - [pasta](https://github.com/google/pasta)
+  #           A Python refactoring tool based on the `ast` module. Comes in the form of an SDK.
+  #         - [objgraph](https://mg.pov.lt/objgraph/)
+  #           A module that lets you visually explore Python object graphs.
+  #     - CLI Apps
+  #         - [dunk](https://github.com/darrenburns/dunk)
+  #           Prettier git diffs.
+  #         - [mypyc](https://mypyc.readthedocs.io/en/latest/getting_started.html#installation)
+  #           Compiles Python code to a Python extension, based on type hinting. Actually works!
+  #             - Seems to work at face value.
+  #             - It was used to compile [black](https://dynalist.io/d/Ry5UlxB-J0kkCWO3aG_e9pzf#z=a4vN7EsVb2x2DMe73TEsOeDf)
+  #                 - The process was documented! Can see more through [here](https://www.reddit.com/r/Python/comments/v2009i/im_that_person_who_got_black_compiled_with_mypyc/).
+  #             - Personal findings
+  #                 - Running the `mypyc` compiler on script/package/module whatever, should result in a `*.so` file in your __current-working-directory__. Once that's there, importing that module will result in the extension being loaded, achieving faster speeds.
+  #                 - Reading a bit about the `black`'s team difficulties suggests that implementing it on a preexisting project could prove very difficult.
+  #                     - Plus there are some typing stuff that the compiler doesn't seem to handle correctly.
+  #             - Missing Research
+  #                 - **Can the tool be used in only a specific part of a package? (Specific file perhaps?)**
+  #                     - Yes!
+  #                 - **Does the tool enable the desired threading behavior?**
+  #                 - **How does one publish the compiled variation of a package?**
+  #                 - **How does it handle code that's necessarily untyped? (Like third party packages without correct type-hinting and the likes)**
+  #                 - **What's the difference between MODULE & PACKAGE in the compiler help?**
+  #                   Don't know what the "MODULE" should be, but "PACKAGE" is the one that we want.
+  #     - APIs
+  #         - [Jira](https://pypi.org/project/jira/)
+  #           A client for Jira stuff
+  #     - Pure Fun
+  #         - [pokete](https://github.com/lxgr-linux/pokete)
+  #           It's a Pokemon, but in a terminal.
+  # - https://github.com/saharmor/dalle-playground
+  # - [Pandas Alternatives](https://towardsdatascience.com/8-alternatives-to-pandas-for-processing-large-datasets-928fc927b08c)
+  # - [pip-review](https://pypi.org/project/pip-review/)
+  # - [mprite](https://github.com/Slimmer-AI/mpire)
+  #   "`M`ulti`P`rocessing `I`s `R`eally `E`asy" - Another concurrency package for Python
+  # - [pip-run](https://github.com/jaraco/pip-run)
+  #   Run one-off Python scripts that have requirements (defined inlined)
+  # - [Dinghy](https://pypi.org/project/dinghy/)
+  #   A GitHub activity digest tool.
+  # - https://github.com/pypa/distlib
+  # - [Did you know that the Python 🐍 `functools.reduce` and `itertools.accumulate` are related?](https://twitter.com/mathsppblog/status/1556555347413852163?t=1jRlyQuEV3FQXITcQUdszg&s=09) - Tweet
+  # - [How I added C-style for-loops to Python](https://sadh.life/post/cursed-for/?s=09)
+  # - [pyTermTk](https://github.com/ceccopierangiolieugenio/pyTermTk)
+  #   A Python TUI library. Not Textual. Still seemingly cool looking. Has graphs and stuff.
+  # - [Open Source Continuous Profiling Platform | Debug performance issues down to a single line of code | Open Source Continuous Profiling Platform](https://pyroscope.io/)
+  # - https://github.com/carlosperate/awesome-pyproject
