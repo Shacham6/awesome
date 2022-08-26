@@ -58,6 +58,33 @@ pytest:
 profiler:
   name: Profilers
 
+lint:
+  name: Linter
+
+pylint:
+  name: Pylint
+
+security:
+  name: Security
+
+files:
+  name: Files and Filesystem
+
+docs:
+  name: Documentation
+
+tasks:
+  name: Tasks and Task Management
+
+refactoring:
+  name: Refactoring
+
+meta:
+  name: Meta / Tracing
+
+app:
+  name: Applications
+
 ---
 - name: Python Enchancement Proposals - Index
   link: https://peps.python.org/
@@ -253,7 +280,7 @@ profiler:
   description:
     The pretty-much most popular linter for Python. Is __very__ involved in the code.
     Will be effective **only if used pragmatically**.
-  tags: [python, lint, pylints]
+  tags: [python, lint, pylint]
 
 - name: Pylint Message Control
   link: https://pylint.pycqa.org/en/latest/user_guide/messages/message_control.html
