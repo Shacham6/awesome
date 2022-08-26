@@ -401,19 +401,50 @@ app:
   link: https://github.com/lxgr-linux/pokete
   tags: [python, app]
 
-  # - https://github.com/saharmor/dalle-playground
-  # - [Pandas Alternatives](https://towardsdatascience.com/8-alternatives-to-pandas-for-processing-large-datasets-928fc927b08c)
-  # - [pip-review](https://pypi.org/project/pip-review/)
-  # - [mprite](https://github.com/Slimmer-AI/mpire)
-  #   "`M`ulti`P`rocessing `I`s `R`eally `E`asy" - Another concurrency package for Python
-  # - [pip-run](https://github.com/jaraco/pip-run)
-  #   Run one-off Python scripts that have requirements (defined inlined)
-  # - [Dinghy](https://pypi.org/project/dinghy/)
-  #   A GitHub activity digest tool.
-  # - https://github.com/pypa/distlib
-  # - [Did you know that the Python 🐍 `functools.reduce` and `itertools.accumulate` are related?](https://twitter.com/mathsppblog/status/1556555347413852163?t=1jRlyQuEV3FQXITcQUdszg&s=09) - Tweet
-  # - [How I added C-style for-loops to Python](https://sadh.life/post/cursed-for/?s=09)
-  # - [pyTermTk](https://github.com/ceccopierangiolieugenio/pyTermTk)
-  #   A Python TUI library. Not Textual. Still seemingly cool looking. Has graphs and stuff.
-  # - [Open Source Continuous Profiling Platform | Debug performance issues down to a single line of code | Open Source Continuous Profiling Platform](https://pyroscope.io/)
-  # - https://github.com/carlosperate/awesome-pyproject
+- name: Pandas Alternatives
+  link: https://towardsdatascience.com/8-alternatives-to-pandas-for-processing-large-datasets-928fc927b08c
+  tags: [python, misc]
+
+- name: pip-review
+  link: https://pypi.org/project/pip-review/
+  tags: [python, package-management]
+
+- name: mpire
+  description: "`M`ulti`P`rocessing `I`s `R`eally `E`asy - Another concurrency package for Python"
+  link: https://github.com/Slimmer-AI/mpire
+  tags: [python, concurrency]
+
+- name: pip-run
+  description: Run one-off Python scripts that have requirements (defined inlined)
+  link: https://github.com/jaraco/pip-run
+  tags: [python, package-management]
+
+- name: Dinghy
+  description: A GitHub activity digest tool.
+  link: https://pypi.org/project/dinghy/
+  tags: [python, app]
+
+- name: distlib
+  link: https://github.com/pypa/distlib
+  tags: [python, package-management]
+
+- name: Did you know that the Python 🐍 `functools.reduce` and `itertools.accumulate` are related?
+  link: https://twitter.com/mathsppblog/status/1556555347413852163?t=1jRlyQuEV3FQXITcQUdszg&s=09
+  tags: [python, guides]
+
+- name: How I added C-style for-loops to Python
+  link: https://sadh.life/post/cursed-for/?s=09
+  tags: [python, guides]
+
+- name: pyTermTk
+  description: A Python TUI library. Not Textual. Still seemingly cool looking. Has graphs and stuff.
+  link: https://github.com/ceccopierangiolieugenio/pyTermTk
+  tags: [python, tui]
+
+- name: Awesome pyproject
+  link: https://github.com/carlosperate/awesome-pyproject
+  tags: [python, awesome-list]
+
+- name: Pyroscope
+  link: https://pyroscope.io/
+  tags: [python, profiler]
