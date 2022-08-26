@@ -29,4 +29,6 @@ jobs:
 
       - name: Commit and Push
         run: >
+          git config user.email "automation@gh-bot.com"
+          git config user.name "GH Bot"
           git add README.md && git commit -m "Rendered README.md" && git push origin master
