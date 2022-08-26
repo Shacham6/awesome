@@ -3,6 +3,10 @@ python:
   description:
     Python related resources
 
+rust:
+  name: Rust
+  description: Rust related resources
+
 cli:
   name: Command-Line Interface
 
