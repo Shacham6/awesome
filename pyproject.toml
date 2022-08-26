@@ -3,7 +3,10 @@ name = "shach_awesome"
 version = "0.0.1"
 description = "Builder for Shacham's awesome list."
 
-dependencies = []
+dependencies = [
+    "mistletoe>=0.9.0",
+    "pyyaml>=6.0",
+]
 requires-python = ">=3.10"
 license = { text = "MIT" }
 
@@ -11,6 +14,16 @@ license = { text = "MIT" }
 name = "Shacham Ginat"
 email = "shacham6@gmail.com"
 
+
+[project.optional-dependencies]
 [build-system]
 requires = ["pdm-pep517>=1.0.0"]
 build-backend = "pdm.pep517.api"
+
+[tool]
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "pylint>=2.14.5",
+    "black>=22.6.0",
+]
