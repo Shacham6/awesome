@@ -52,8 +52,15 @@ data-science:
 data-serialization:
   name: Data Serialization
 
-pytest-plugins:
-  name: Pytest Plugins
+pytest:
+  name: Pytest
+  description: The de-facto testing framework for Python.
+  link: https://docs.pytest.org/en/7.1.x/
+
+# pytest-plugins:
+#   name: Pytest
+#   description: The de-facto testing framework for Python.
+#   link: https://docs.pytest.org/en/7.1.x/
 
 profiler:
   name: Profilers
@@ -62,18 +69,6 @@ profiler:
 - name: Python Enchancement Proposals - Index
   link: https://peps.python.org/
   tags: [python]
-
-# - name: rich
-#   link: https://rich.readthedocs.io/en/stable/introduction.html
-#   tags: [python, tui]
-#   description: >
-#     Create beautiful CLI's using Python.
-
-# - name: pytest
-#   link: https://docs.pytest.org/en/7.1.x/
-#   tags: [python, testing]
-#   description: >
-# The most popular Python testing framework.
 
 - name: fstring.help
   link: https://fstring.help
@@ -206,32 +201,32 @@ profiler:
   description: YAML package that maintains the order of keys
   tags: [python, data-serialization, yaml]
 
-- name: pytest
-  link: https://docs.pytest.org/en/7.1.x/
-  description: The de-facto testing framework for Python
-  tags: [python, testing]
+# - name: pytest
+#   link: https://docs.pytest.org/en/7.1.x/
+#   description: The de-facto testing framework for Python
+#   tags: [python, testing]
 
 - name: pytest-monitor
   link: https://pypi.org/project/pytest-monitor/
-  tags: [python, testing, pytest-plugins]
+  tags: [python, testing, pytest]
 
 - name: pytest-profiling
   link: https://github.com/man-group/pytest-plugins/tree/master/pytest-profiling
-  tags: [python, testing, pytest-plugins]
+  tags: [python, testing, pytest]
 
 - name: Awesome Pytest
   description: A list of `pytest` resources.
   link: https://github.com/augustogoulart/awesome-pytest
-  tags: [python, testing, pytest-plugins]
+  tags: [python, testing, pytest]
 
 - name: pytest-subsets
   description: Looks like a way to "split" a test into "segments"; With each being reported separately.
   link: https://github.com/pytest-dev/pytest-subtests
-  tags: [pytest, testing, pytest-plugins]
+  tags: [pytest, testing, pytest]
 
 - name: pytest-benchmark
   link: https://github.com/ionelmc/pytest-benchmark
-  tags: [python, testing, pytest-plugins]
+  tags: [python, testing, pytest]
 
 - name: ward
   description: An interesting, alternative testing-framework for Python. All things considered I'd have preferred this one if pytest wasn't already the clear winner..
