@@ -101,6 +101,12 @@ makefile:
 article:
   name: Articles
 
+github:
+  name: GitHub
+
+actions:
+  name: Actions
+
 ---
 - name: Python Enchancement Proposals - Index
   link: https://peps.python.org/
@@ -494,3 +500,36 @@ article:
 - name: Makefile Tutorial
   link: https://makefiletutorial.com/
   tags: [makefile, guides]
+
+- name: Creating A Reusable Workflow
+  link: https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow
+  description: Package existing plans so that replication will be (allegedly) easy.
+  tags: [github, guides]
+
+- name: Webhooks & Payloads
+  link: https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads
+  description: Documentation for the GitHub payloads
+  tags: [github, guides]
+
+- name: Labeler
+  link: https://github.com/actions/labeler
+  description: Labels pull-requests, based on whether or not some files change.
+  tags: [github, actions]
+
+- name: Slash Command Dispatch
+  link: https://github.com/marketplace/actions/slash-command-dispatch
+  description: Helps to facilitate slash-commands
+  tags: [github, actions]
+
+- name: GitHub Actions For Jira
+  link: https://github.com/atlassian/gajira
+  tags: [github, actions]
+
+- name: GraphQL Explorer
+  link: https://docs.github.com/en/graphql/overview/explorer
+  description: To explore the Github things with GraphQL. Looks cool actually.
+  tags: [github]
+
+- name: Awesome Actions
+  link: https://github.com/sdras/awesome-actions
+  tags: [github, actions, awesome-list]
