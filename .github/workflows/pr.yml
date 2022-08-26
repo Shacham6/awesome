@@ -8,8 +8,6 @@ jobs:
   render-and-push:
     name: Render And Push
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout
