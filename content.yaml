@@ -368,7 +368,7 @@ concurrency:
 - name: pathos
   description: _"parallel graph management and execution in heterogeneous computing"_
   link: https://pathos.readthedocs.io/en/latest/index.html
-  tags: [python, tasks]
+  tags: [python, concurrency]
 
 - name: rocketry
   description: A scheduling framework for Python. Strives for simplicity.
