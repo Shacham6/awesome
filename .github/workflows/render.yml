@@ -5,6 +5,10 @@ on:
     branches:
       - master
 
+    paths:
+      - templates/**
+      - content.yaml
+
 jobs:
   render-and-push:
     name: Render And Push
