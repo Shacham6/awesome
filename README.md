@@ -57,9 +57,9 @@ This is more for me, but if you find this list useful, cheers.
 - **[oyaml](https://github.com/wimglenn/oyaml)** - YAML package that maintains the order of keys 
 ## Testing
 > Resources to help with the process of testing your code.
-- **[pytest](https://docs.pytest.org/en/7.1.x/)** - The de-facto testing framework for Python 
 - **[ward](https://github.com/darrenburns/ward)** - An interesting, alternative testing-framework for Python. All things considered I'd have preferred this one if pytest wasn't already the clear winner.. 
-### Pytest Plugins
+###  [Pytest](https://docs.pytest.org/en/7.1.x/)
+> The de-facto testing framework for Python.
 - **[pytest-monitor](https://pypi.org/project/pytest-monitor/)**
 - **[pytest-profiling](https://github.com/man-group/pytest-plugins/tree/master/pytest-profiling)**
 - **[Awesome Pytest](https://github.com/augustogoulart/awesome-pytest)** - A list of `pytest` resources. 
@@ -104,8 +104,10 @@ This is more for me, but if you find this list useful, cheers.
 - **[Pokete](https://github.com/lxgr-linux/pokete)** - It's a Pokemon, but in a terminal. 
 ## Clients
 - **[Jira](https://pypi.org/project/jira/)** - A client for Jira. 
-# pytest
+#  [Pytest](https://docs.pytest.org/en/7.1.x/)
+> The de-facto testing framework for Python.
 ## Testing
 > Resources to help with the process of testing your code.
-### Pytest Plugins
+###  [Pytest](https://docs.pytest.org/en/7.1.x/)
+> The de-facto testing framework for Python.
 - **[pytest-subsets](https://github.com/pytest-dev/pytest-subtests)** - Looks like a way to "split" a test into "segments"; With each being reported separately. 
