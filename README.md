@@ -58,11 +58,12 @@ This is more for me, but if you find this list useful, cheers.
 ## Testing
 > Resources to help with the process of testing your code.
 - **[ward](https://github.com/darrenburns/ward)** - An interesting, alternative testing-framework for Python. All things considered I'd have preferred this one if pytest wasn't already the clear winner.. 
-###  [Pytest](https://docs.pytest.org/en/7.1.x/)
-> The de-facto testing framework for Python.
+### Pytest
+- **[pytest](https://docs.pytest.org/en/7.1.x/)** - The de-facto testing framework for Python 
 - **[pytest-monitor](https://pypi.org/project/pytest-monitor/)**
 - **[pytest-profiling](https://github.com/man-group/pytest-plugins/tree/master/pytest-profiling)**
 - **[Awesome Pytest](https://github.com/augustogoulart/awesome-pytest)** - A list of `pytest` resources. 
+- **[pytest-subsets](https://github.com/pytest-dev/pytest-subtests)** - Looks like a way to "split" a test into "segments"; With each being reported separately. 
 - **[pytest-benchmark](https://github.com/ionelmc/pytest-benchmark)**
 ## Profilers
 - **[memray](https://github.com/bloomberg/memray)** - A suddenly incredibly popular memory profiler. It was initially private as far as I know, and soon after it was released to the public it became immensely popular, very quickly. 
@@ -72,9 +73,10 @@ This is more for me, but if you find this list useful, cheers.
 - **PyPerf** - Toolkit to write, run and analyze benchmarks. Same idea as `Py-Spy`, but from kernel-space. 
 - **py-spy** - sampling profiler for Python programs. 
 ## lint
-- **[pylint](https://pylint.pycqa.org/en/latest/index.html)** - The pretty-much most popular linter for Python. Is __very__ involved in the code. Will be effective **only if used pragmatically**. 
 - **[Flake8](https://flake8.pycqa.org/en/latest/)** - A popular Python linter that's more focused on coding conventions. 
 - **[Bandit](https://github.com/PyCQA/bandit)** - A security linter from PyCQA 
+### pylints
+- **[pylint](https://pylint.pycqa.org/en/latest/index.html)** - The pretty-much most popular linter for Python. Is __very__ involved in the code. Will be effective **only if used pragmatically**. 
 ### pylint
 - **[Pylint Message Control](https://pylint.pycqa.org/en/latest/user_guide/messages/message_control.html)**
 ## security
@@ -104,10 +106,3 @@ This is more for me, but if you find this list useful, cheers.
 - **[Pokete](https://github.com/lxgr-linux/pokete)** - It's a Pokemon, but in a terminal. 
 ## Clients
 - **[Jira](https://pypi.org/project/jira/)** - A client for Jira. 
-#  [Pytest](https://docs.pytest.org/en/7.1.x/)
-> The de-facto testing framework for Python.
-## Testing
-> Resources to help with the process of testing your code.
-###  [Pytest](https://docs.pytest.org/en/7.1.x/)
-> The de-facto testing framework for Python.
-- **[pytest-subsets](https://github.com/pytest-dev/pytest-subtests)** - Looks like a way to "split" a test into "segments"; With each being reported separately. 
