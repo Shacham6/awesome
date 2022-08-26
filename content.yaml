@@ -54,13 +54,6 @@ data-serialization:
 
 pytest:
   name: Pytest
-  description: The de-facto testing framework for Python.
-  link: https://docs.pytest.org/en/7.1.x/
-
-# pytest-plugins:
-#   name: Pytest
-#   description: The de-facto testing framework for Python.
-#   link: https://docs.pytest.org/en/7.1.x/
 
 profiler:
   name: Profilers
@@ -201,10 +194,10 @@ profiler:
   description: YAML package that maintains the order of keys
   tags: [python, data-serialization, yaml]
 
-# - name: pytest
-#   link: https://docs.pytest.org/en/7.1.x/
-#   description: The de-facto testing framework for Python
-#   tags: [python, testing]
+- name: pytest
+  link: https://docs.pytest.org/en/7.1.x/
+  description: The de-facto testing framework for Python
+  tags: [python, testing, pytest]
 
 - name: pytest-monitor
   link: https://pypi.org/project/pytest-monitor/
@@ -222,7 +215,7 @@ profiler:
 - name: pytest-subsets
   description: Looks like a way to "split" a test into "segments"; With each being reported separately.
   link: https://github.com/pytest-dev/pytest-subtests
-  tags: [pytest, testing, pytest]
+  tags: [python, testing, pytest]
 
 - name: pytest-benchmark
   link: https://github.com/ionelmc/pytest-benchmark
@@ -260,7 +253,7 @@ profiler:
   description:
     The pretty-much most popular linter for Python. Is __very__ involved in the code.
     Will be effective **only if used pragmatically**.
-  tags: [python, lint]
+  tags: [python, lint, pylints]
 
 - name: Pylint Message Control
   link: https://pylint.pycqa.org/en/latest/user_guide/messages/message_control.html
