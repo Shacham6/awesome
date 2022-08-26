@@ -3,6 +3,10 @@ python:
   description:
     Python related resources
 
+rust:
+  name: Rust
+  description: Rust related resources
+
 cli:
   name: Command-Line Interface
 
@@ -85,6 +89,41 @@ meta:
 app:
   name: Applications
 
+package-management:
+  name: Package Management
+
+concurrency:
+  name: Concurrency
+
+makefile:
+  name: Makefile
+
+article:
+  name: Articles
+
+github:
+  name: GitHub
+
+actions:
+  name: Actions
+
+open-source:
+  name: Open-Source
+
+bash:
+  name: Bash
+
+cheatsheet:
+  name: Cheat-Sheet
+
+json:
+  name: "`JSON`"
+
+yaml:
+  name: "`YAML`"
+
+graphql:
+  name: GraphQL
 ---
 - name: Python Enchancement Proposals - Index
   link: https://peps.python.org/
@@ -358,7 +397,7 @@ app:
 - name: pathos
   description: _"parallel graph management and execution in heterogeneous computing"_
   link: https://pathos.readthedocs.io/en/latest/index.html
-  tags: [python, tasks]
+  tags: [python, concurrency]
 
 - name: rocketry
   description: A scheduling framework for Python. Strives for simplicity.
@@ -397,19 +436,211 @@ app:
   link: https://github.com/lxgr-linux/pokete
   tags: [python, app]
 
-  # - https://github.com/saharmor/dalle-playground
-  # - [Pandas Alternatives](https://towardsdatascience.com/8-alternatives-to-pandas-for-processing-large-datasets-928fc927b08c)
-  # - [pip-review](https://pypi.org/project/pip-review/)
-  # - [mprite](https://github.com/Slimmer-AI/mpire)
-  #   "`M`ulti`P`rocessing `I`s `R`eally `E`asy" - Another concurrency package for Python
-  # - [pip-run](https://github.com/jaraco/pip-run)
-  #   Run one-off Python scripts that have requirements (defined inlined)
-  # - [Dinghy](https://pypi.org/project/dinghy/)
-  #   A GitHub activity digest tool.
-  # - https://github.com/pypa/distlib
-  # - [Did you know that the Python 🐍 `functools.reduce` and `itertools.accumulate` are related?](https://twitter.com/mathsppblog/status/1556555347413852163?t=1jRlyQuEV3FQXITcQUdszg&s=09) - Tweet
-  # - [How I added C-style for-loops to Python](https://sadh.life/post/cursed-for/?s=09)
-  # - [pyTermTk](https://github.com/ceccopierangiolieugenio/pyTermTk)
-  #   A Python TUI library. Not Textual. Still seemingly cool looking. Has graphs and stuff.
-  # - [Open Source Continuous Profiling Platform | Debug performance issues down to a single line of code | Open Source Continuous Profiling Platform](https://pyroscope.io/)
-  # - https://github.com/carlosperate/awesome-pyproject
+- name: Pandas Alternatives
+  link: https://towardsdatascience.com/8-alternatives-to-pandas-for-processing-large-datasets-928fc927b08c
+  tags: [python, misc]
+
+- name: pip-review
+  link: https://pypi.org/project/pip-review/
+  tags: [python, package-management]
+
+- name: mpire
+  description: "`M`ulti`P`rocessing `I`s `R`eally `E`asy - Another concurrency package for Python"
+  link: https://github.com/Slimmer-AI/mpire
+  tags: [python, concurrency]
+
+- name: pip-run
+  description: Run one-off Python scripts that have requirements (defined inlined)
+  link: https://github.com/jaraco/pip-run
+  tags: [python, package-management]
+
+- name: Dinghy
+  description: A GitHub activity digest tool.
+  link: https://pypi.org/project/dinghy/
+  tags: [python, app]
+
+- name: distlib
+  link: https://github.com/pypa/distlib
+  tags: [python, package-management]
+
+- name: Did you know that the Python 🐍 `functools.reduce` and `itertools.accumulate` are related?
+  link: https://twitter.com/mathsppblog/status/1556555347413852163?t=1jRlyQuEV3FQXITcQUdszg&s=09
+  tags: [python, guides]
+
+- name: How I added C-style for-loops to Python
+  link: https://sadh.life/post/cursed-for/?s=09
+  tags: [python, guides]
+
+- name: pyTermTk
+  description: A Python TUI library. Not Textual. Still seemingly cool looking. Has graphs and stuff.
+  link: https://github.com/ceccopierangiolieugenio/pyTermTk
+  tags: [python, tui]
+
+- name: Awesome pyproject
+  link: https://github.com/carlosperate/awesome-pyproject
+  tags: [python, awesome-list]
+
+- name: Pyroscope
+  link: https://pyroscope.io/
+  tags: [python, profiler]
+
+- name: Rustlings
+  link: https://github.com/rust-lang/rustlings
+  tags: [rust, exercises]
+
+- name: Rust Design Patterns - Idioms
+  link: https://rust-unofficial.github.io/patterns/idioms/index.html
+  description: An unofficial document describing Rust best practices and idioms.
+  tags: [rust, guides]
+
+- name: "Rust Is Hard, Or: The Misery of Mainstream Programming"
+  link: https://hirrolot.github.io/posts/rust-is-hard-or-the-misery-of-mainstream-programming.html
+  tags: [rust, article]
+
+- name: inline_python
+  link: https://docs.rs/inline-python/latest/inline_python/
+  tags: [rust, python]
+
+- name: scrawl
+  link: https://github.com/xvrqt/scrawl
+  description: A library that opens a user's text editor and returns the results as a string
+  tags: [rust, cli]
+
+- name: lib.rs
+  link: https://lib.rs
+  tags: [rust]
+
+- name: maturin
+  link: https://github.com/PyO3/maturin
+  tags: [rust, python]
+
+- name: Makefile Tutorial
+  link: https://makefiletutorial.com/
+  tags: [makefile, guides]
+
+- name: Creating A Reusable Workflow
+  link: https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow
+  description: Package existing plans so that replication will be (allegedly) easy.
+  tags: [github, guides]
+
+- name: Webhooks & Payloads
+  link: https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads
+  description: Documentation for the GitHub payloads
+  tags: [github, guides]
+
+- name: Labeler
+  link: https://github.com/actions/labeler
+  description: Labels pull-requests, based on whether or not some files change.
+  tags: [github, actions]
+
+- name: Slash Command Dispatch
+  link: https://github.com/marketplace/actions/slash-command-dispatch
+  description: Helps to facilitate slash-commands
+  tags: [github, actions]
+
+- name: GitHub Actions For Jira
+  link: https://github.com/atlassian/gajira
+  tags: [github, actions]
+
+- name: GraphQL Explorer
+  link: https://docs.github.com/en/graphql/overview/explorer
+  description: To explore the Github things with GraphQL. Looks cool actually.
+  tags: [github]
+
+- name: Awesome Actions
+  link: https://github.com/sdras/awesome-actions
+  tags: [github, actions, awesome-list]
+
+- name: myfreelogomaker
+  description: A website to generate logos that look good. Adi used it for my personal projects.
+  link: https://myfreelogomaker.com/
+  tags: [open-source, app]
+
+- name: Keep A Changelog
+  description: A reference for a Changelog file.
+  link: https://keepachangelog.com/en/1.0.0/
+  tags: [open-source, guides]
+
+- name: Semver
+  description: The __manifesto__ of semantic-versioning.
+  link: https://semver.org/
+  tags: [open-source, guides]
+
+- name: Choose a License
+  description: Describes in relative ease the different licenses found in Open-Source projects.
+  link: https://choosealicense.com/
+  tags: [open-source, app]
+
+- name: System Design Primer
+  description: A GitHub repository that provides lessons on systems design.
+  link: ttps://github.com/donnemartin/system-design-primer
+  tags: [guides]
+
+- name: ml-ops.org
+  link: https://ml-ops.org/
+  description: A website detailing stuff about mlops. Just guessing it's popular to do it's leading position on Google's search results.
+  tags: [data-science]
+
+- name: MLOPs Primer
+  link: https://github.com/dair-ai/MLOPs-Primer
+  description: A Github repository in the same vein as System Design Primer.
+  tags: [data-science, guides]
+
+- name: Bash Cheatsheet
+  link: https://devhints.io/bash
+  description: A good cheatsheet for doing stuff in Bash (and Zsh).
+  tags: [bash, cheatsheet]
+
+- name: Regexr
+  link: https://regexr.com/
+  description: A great site to build, test and learn Regex.
+  tags: [open-source, app]
+
+- name: "0.1 + 0.2 == 0.3000000004"
+  link: https://0.30000000000000004.com/
+  description: Great example about how floating points work.
+  tags: [app]
+
+- name: Learn X in Y minutes
+  link: https://learnxinyminutes.com/
+  description: A great website to quickly learn programming languages and stuff, relatively quickly. Works as a cheatsheet.
+  tags: [cheatsheet]
+
+- name: "`jq` Cheatsheet"
+  link: https://lzone.de/cheat-sheet/jq
+  description: A cheatsheet for all `jq` features
+  tags: [jq, cheatsheet]
+
+- name: "`jq` Playground"
+  link: https://jqplay.org/
+  description: A place to test `jq` queries.
+  tags: [jq, app]
+
+- name: JSON Lines
+  link: https://jsonlines.org/
+  description: A format which is basically "streamable" json.
+  tags: [json]
+
+- name: ndjson
+  link: http://ndjson.org/
+  description: Another format which is basically "streamable" json. Looks identical to JSON Lines.
+  tags: [json]
+
+- name: Advanced YAML syntax cheatsheet
+  link: https://www.educative.io/blog/advanced-yaml-syntax-cheatsheet
+  tags: [yaml]
+
+- name: Tutorial
+  description: Official GraphQL tutorial.
+  link: https://graphql.org/learn/
+  tags: [graphql, guides]
+
+- name: pyo3
+  description: Rust <-> Python bindings
+  link: https://github.com/PyO3/pyo3
+  tags: [rust, python]
+
+- name: LeetDesign
+  description: System Design Practice Problems
+  link: https://leetdesign.com/
+  tags: [guides]
