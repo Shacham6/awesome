@@ -4,9 +4,13 @@ Tui: >
   Resources for Terminal UI
 ---
 - name: rich
-  description: Create beautiful CLI's using Python
+  link: https://rich.readthedocs.io/en/stable/introduction.html
   tags: [Python, Tui]
+  description: >
+    Create beautiful CLI's using Python
 
 - name: pytest
-  description: The most popular Python testing framework
+  link: https://docs.pytest.org/en/7.1.x/
   tags: [Python, Testing]
+  description: >
+    The most popular Python testing framework

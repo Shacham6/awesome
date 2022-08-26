@@ -4,9 +4,14 @@ from typing import List, Mapping, Tuple, TypedDict, cast
 import jinja2
 import yaml
 
-block_template: jinja2.Template = jinja2.Template(
-    pathlib.Path(__file__).parent.joinpath("block_template.jinja2").read_text("utf-8")
+templates = jinja2.Environment(
+    loader=jinja2.FileSystemLoader(pathlib.Path(__file__).parent.joinpath("templates"))
 )
+
+# block_template: jinja2.Template = jinja2.Template(
+#     pathlib.Path(__file__).parent.joinpath("block_template.jinja2").read_text("utf-8")
+# )
+block_template = templates.get_template("block.jinja2")
 
 
 class ContentItem(TypedDict):
@@ -41,12 +46,20 @@ md_content = [
     "# Shacham's Awesome List",
     "This is my awesome list, for various things.",
     "This is more for me, but if you find this list useful, cheers.",
+    "",
+    "---",
 ]
 
 
 def walk(group_name, group: dict, level=1):
-    md_content.append(f"{'#' * level} {group_name}")
-    md_content.append(header_details.get(group_name, ""))
+    # md_content.append(f"{'#' * level} {group_name}")
+    # md_content.append(header_details.get(group_name, ""))
+
+    md_content.append(templates.get_template("header.jinja2").render({
+        "name": group_name,
+        "level": level,
+        "description": header_details.get(group_name, ""),
+    }))
 
     for item in group.pop("_items", []):
         # md_content.append(f"- {item['name']} - {item['description']}")
