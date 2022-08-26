@@ -1,6 +1,6 @@
 python:
   name: Python
-  description: |
+  description:
     Python related resources
 
 cli:
@@ -8,12 +8,12 @@ cli:
 
 tui:
   name: TUI (Terminal UI)
-  description: |
+  description:
     Resources for Terminal UI.
 
 testing:
   name: Testing
-  description: >
+  description:
     Resources to help with the process of testing your code.
 
 guides:
@@ -91,8 +91,7 @@ profiler:
 - name: Python File Modes Explanations
   link: https://stackoverflow.com/a/23566951
   tags: [python, guides]
-  description: >
-    All those `r w a r+ w+`, blah blah blah? An explanation for _those_.
+  description: All those `r w a r+ w+`, blah blah blah? An explanation for _those_.
 
 - name: "Type Theory: Type Variance in Python"
   link: https://rednafi.github.io/reflections/variance-of-generic-types-in-python.html
@@ -241,7 +240,7 @@ profiler:
 
 - name: memray
   link: https://github.com/bloomberg/memray
-  description: >
+  description:
     A suddenly incredibly popular memory profiler.
     It was initially private as far as I know, and soon after it was released to the public it became immensely popular, very quickly.
   tags: [python, profiler]
@@ -254,100 +253,135 @@ profiler:
   link: https://pypi.org/project/memory-profiler
   tags: [python, profiler]
 
-
 - name: black
   link: https://github.com/psf/black
-  description: >
+  description:
     The currently most popular automatic formatter for Python.
     Really rigid, but that's a "feature".
   tags: [python, profiler]
 
+- name: pylint
+  link: https://pylint.pycqa.org/en/latest/index.html
+  description:
+    The pretty-much most popular linter for Python. Is __very__ involved in the code.
+    Will be effective **only if used pragmatically**.
+  tags: [python, lint]
 
-  # - Packages
-  #         - Profilers
-  #             - [memray]()
-  #               ==NOTE==: **Works only on Linux!**
+- name: Pylint Message Control
+  link: https://pylint.pycqa.org/en/latest/user_guide/messages/message_control.html
+  tags: [python, lint, pylint]
 
-  #             - [line-profiler]()
-  #             - [memory-profiler]()
-  #             - PyPerf
-  #               Toolkit to write, run and analyze benchmarks. Same idea as `Py-Spy`, but from kernel-space.
-  #             - py-spy
-  #               sampling profiler for Python programs.
-  #         - Formatters
-  #             - [black](https://github.com/psf/black)
-  #         - Linters
-  #             - [Pylint](https://pylint.pycqa.org/en/latest/index.html)
-  #               The pretty-much most popular linter for Python. Is __very__ involved in the code.
-  #               Will be effective **only if used pragmatically**.
-  #                 - [Pylint Message Control](https://pylint.pycqa.org/en/latest/user_guide/messages/message_control.html)
-  #             - [Flake8](https://flake8.pycqa.org/en/latest/)
-  #               A popular Python linter that's more focused on coding conventions.
-  #         - Security
-  #             - Real-Time services
-  #                 - [PyUP | Python Dependency Security](https://pyup.io/)
-  #                   A company that keeps dependencies up-to-date and ensures security and such. Like `snyk`, kinda.
-  #             - Apps
-  #                 - [Bandit](https://github.com/PyCQA/bandit)
-  #                   A security linter from PyCQA
-  #     - Files
-  #         - [watchfiles](https://pypi.org/project/watchfiles/)
-  #           A package to watch changes in local directory.
-  #         - [magicalimport](https://pypi.org/project/magicalimport/)
-  #           Importing a module from physical file path.
-  #         - [pox](https://pypi.org/project/pox/)
-  #           A collection of utilities for navigating and manipulating filesystems.
-  #         - [pathspec](https://pypi.org/project/pathspec/)
-  #           A utility library for pattern matching of file paths. So far this only includes Git’s wildmatch pattern matching which itself is derived from Rsync’s wildmatch.
-  #     - Documentation
-  #         - [mkdocs](https://github.com/mkdocs/mkdocs)
-  #           The best documentation generator for Programming Projects.
-  #           Written in Python. Has a sweet GitHub-Pages integration.
-  #             - [mkdocstrings](https://github.com/mkdocstrings/mkdocstrings)
-  #               Automatic documentation from sources, for MkDocs.
-  #             - [mkdocs-click](https://pypi.org/project/mkdocs-click/)
-  #               Generate mkdocs pages from `click` apps.
-  #         - [interrogate](https://github.com/econchick/interrogate)
-  #           Validates that all of the things are documented?
-  #     - Tasks
-  #         - [huey](https://github.com/coleifer/huey)
-  #           A small Task-Queue for Python
-  #         - [pathos](https://pathos.readthedocs.io/en/latest/index.html)
-  #           __"parallel graph management and execution in heterogeneous computing"__
-  #           Sounds like a `dependency-tree`.
-  #         - [rocketry](https://github.com/Miksus/rocketry)
-  #           A scheduling framework for Python. Strives for simplicity.
-  #     - Refactoring
-  #         - [pasta](https://github.com/google/pasta)
-  #           A Python refactoring tool based on the `ast` module. Comes in the form of an SDK.
-  #         - [objgraph](https://mg.pov.lt/objgraph/)
-  #           A module that lets you visually explore Python object graphs.
-  #     - CLI Apps
-  #         - [dunk](https://github.com/darrenburns/dunk)
-  #           Prettier git diffs.
-  #         - [mypyc](https://mypyc.readthedocs.io/en/latest/getting_started.html#installation)
-  #           Compiles Python code to a Python extension, based on type hinting. Actually works!
-  #             - Seems to work at face value.
-  #             - It was used to compile [black](https://dynalist.io/d/Ry5UlxB-J0kkCWO3aG_e9pzf#z=a4vN7EsVb2x2DMe73TEsOeDf)
-  #                 - The process was documented! Can see more through [here](https://www.reddit.com/r/Python/comments/v2009i/im_that_person_who_got_black_compiled_with_mypyc/).
-  #             - Personal findings
-  #                 - Running the `mypyc` compiler on script/package/module whatever, should result in a `*.so` file in your __current-working-directory__. Once that's there, importing that module will result in the extension being loaded, achieving faster speeds.
-  #                 - Reading a bit about the `black`'s team difficulties suggests that implementing it on a preexisting project could prove very difficult.
-  #                     - Plus there are some typing stuff that the compiler doesn't seem to handle correctly.
-  #             - Missing Research
-  #                 - **Can the tool be used in only a specific part of a package? (Specific file perhaps?)**
-  #                     - Yes!
-  #                 - **Does the tool enable the desired threading behavior?**
-  #                 - **How does one publish the compiled variation of a package?**
-  #                 - **How does it handle code that's necessarily untyped? (Like third party packages without correct type-hinting and the likes)**
-  #                 - **What's the difference between MODULE & PACKAGE in the compiler help?**
-  #                   Don't know what the "MODULE" should be, but "PACKAGE" is the one that we want.
-  #     - APIs
-  #         - [Jira](https://pypi.org/project/jira/)
-  #           A client for Jira stuff
-  #     - Pure Fun
-  #         - [pokete](https://github.com/lxgr-linux/pokete)
-  #           It's a Pokemon, but in a terminal.
+- name: Flake8
+  description: A popular Python linter that's more focused on coding conventions.
+  link: https://flake8.pycqa.org/en/latest/
+  tags: [python, lint]
+
+- name: PyUP
+  description: Python Dependency Security real-time service. Kinda like `snyk` from my understanding.
+  link: https://pyup.io/
+  tags: [python, security]
+
+- name: Bandit
+  description: A security linter from PyCQA
+  link: https://github.com/PyCQA/bandit
+  tags: [python, lint]
+
+- name: PyPerf
+  description: Toolkit to write, run and analyze benchmarks. Same idea as `Py-Spy`, but from kernel-space.
+  tags: [python, profiler]
+
+- name: py-spy
+  description: sampling profiler for Python programs.
+  tags: [python, profiler]
+
+- name: watchfiles
+  description: A package to watch changes in local directory.
+  link: https://pypi.org/project/watchfiles/
+  tags: [python, files]
+
+- name: magicalimport
+  description: Importing a module from physical file path.
+  link: https://pypi.org/project/magicalimport/
+  tags: [python, files]
+
+- name: pox
+  description: A collection of utilities for navigating and manipulating filesystems.
+  link: https://pypi.org/project/pox/
+  tags: [python, files]
+
+- name: pathspec
+  description: A utility library for pattern matching of file paths. So far this only includes Git’s wildmatch pattern matching which itself is derived from Rsync’s wildmatch.
+  link: https://pypi.org/project/pathspec/
+  tags: [python, files]
+
+- name: mkdocs
+  description: The best documentation generator for Programming Projects.
+    Written in Python. Has a sweet GitHub-Pages integration.
+  link: https://github.com/mkdocs/mkdocs
+  tags: [python, docs, mkdocs]
+
+- name: mkdocstrings
+  description: Automatic documentation from sources, for MkDocs.
+  link: https://github.com/mkdocstrings/mkdocstrings
+  tags: [python, docs, mkdocs]
+
+- name: mkdocs-click
+  description: Generate mkdocs pages from `click` apps.
+  link: https://pypi.org/project/mkdocs-click/
+  tags: [python, docs, mkdocs]
+
+- name: interrogate
+  description: Validates that all of the things are documented?
+  link: https://github.com/econchick/interrogate
+  tags: [python, docs]
+
+- name: huey
+  description: A small Task-Queue for Python
+  link: https://github.com/coleifer/huey
+  tags: [python, tasks]
+
+- name: pathos
+  description: _"parallel graph management and execution in heterogeneous computing"_
+  link: https://pathos.readthedocs.io/en/latest/index.html
+  tags: [python, tasks]
+
+- name: rocketry
+  description: A scheduling framework for Python. Strives for simplicity.
+  link: https://github.com/Miksus/rocketry
+  tags: [python, tasks]
+
+- name: pasta
+  description: A Python refactoring tool based on the `ast` module. Comes in the form of an SDK.
+  link: https://github.com/google/pasta
+  tags: [python, refactoring]
+
+- name: objgraph
+  description: A module that lets you visually explore Python object graphs.
+  link: https://mg.pov.lt/objgraph/
+  tags: [python, meta]
+
+- name: dunk
+  description: Prettier git diffs.
+  link: https://github.com/darrenburns/dunk
+  tags: [python, app]
+
+- name: mypyc
+  description:
+    Compiled Python code to a Python extension.
+    Based on type hinting. Seems to actually work!
+  link: https://mypyc.readthedocs.io/en/latest/getting_started.html#installation
+  tags: [python, app]
+
+- name: Jira
+  description: A client for Jira.
+  link: https://pypi.org/project/jira/
+  tags: [python, client]
+
+- name: Pokete
+  description: It's a Pokemon, but in a terminal.
+  link: https://github.com/lxgr-linux/pokete
+  tags: [python, app]
+
   # - https://github.com/saharmor/dalle-playground
   # - [Pandas Alternatives](https://towardsdatascience.com/8-alternatives-to-pandas-for-processing-large-datasets-928fc927b08c)
   # - [pip-review](https://pypi.org/project/pip-review/)
