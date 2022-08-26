@@ -1,7 +1,12 @@
+Python: >
+  Python related resources
+Tui: >
+  Resources for Terminal UI
+---
 - name: rich
   description: Create beautiful CLI's using Python
-  tags: [Python, Libraries, Tui]
+  tags: [Python, Tui]
 
 - name: pytest
   description: The most popular Python testing framework
-  tags: [Python, Frameworks, Testing]
+  tags: [Python, Testing]

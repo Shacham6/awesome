@@ -6,6 +6,7 @@ description = "Builder for Shacham's awesome list."
 dependencies = [
     "mistletoe>=0.9.0",
     "pyyaml>=6.0",
+    "jinja2>=3.1.2",
 ]
 requires-python = ">=3.10"
 license = { text = "MIT" }

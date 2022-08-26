@@ -1,7 +1,12 @@
 import pathlib
-from typing import List, TypedDict, cast
+from typing import List, Mapping, Tuple, TypedDict, cast
 
+import jinja2
 import yaml
+
+block_template: jinja2.Template = jinja2.Template(
+    pathlib.Path(__file__).parent.joinpath("block_template.jinja2").read_text("utf-8")
+)
 
 
 class ContentItem(TypedDict):
@@ -10,9 +15,12 @@ class ContentItem(TypedDict):
     tags: List[str]
 
 
-content_spec = cast(
-    List[ContentItem],
-    yaml.safe_load(
+header_details, content_spec = cast(
+    Tuple[
+        Mapping[str, str],
+        List[ContentItem],
+    ],
+    yaml.safe_load_all(
         pathlib.Path(__file__).parent.joinpath("content.yaml").read_text("utf-8")
     ),
 )
@@ -38,8 +46,11 @@ md_content = [
 
 def walk(group_name, group: dict, level=1):
     md_content.append(f"{'#' * level} {group_name}")
+    md_content.append(header_details.get(group_name, ""))
+
     for item in group.pop("_items", []):
-        md_content.append(f"- {item['name']} - {item['description']}")
+        # md_content.append(f"- {item['name']} - {item['description']}")
+        md_content.append(block_template.render(item))
 
     for inner_group_name, inner_group in group.items():
         walk(inner_group_name, inner_group, level + 1)
