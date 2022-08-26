@@ -115,6 +115,15 @@ bash:
 
 cheatsheet:
   name: Cheat-Sheet
+
+json:
+  name: "`JSON`"
+
+yaml:
+  name: "`YAML`"
+
+graphql:
+  name: GraphQL
 ---
 - name: Python Enchancement Proposals - Index
   link: https://peps.python.org/
@@ -624,7 +633,7 @@ cheatsheet:
 - name: Tutorial
   description: Official GraphQL tutorial.
   link: https://graphql.org/learn/
-  tags: [graphql, guide]
+  tags: [graphql, guides]
 
 - name: pyo3
   description: Rust <-> Python bindings
@@ -634,4 +643,4 @@ cheatsheet:
 - name: LeetDesign
   description: System Design Practice Problems
   link: https://leetdesign.com/
-  tags: [guide]
+  tags: [guides]
