@@ -89,6 +89,12 @@ meta:
 app:
   name: Applications
 
+package-management:
+  name: Package Management
+
+concurrency:
+  name: Concurrency
+
 ---
 - name: Python Enchancement Proposals - Index
   link: https://peps.python.org/
