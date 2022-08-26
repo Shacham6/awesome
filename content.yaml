@@ -1,16 +1,26 @@
-Python: >
-  Python related resources
-Tui: >
-  Resources for Terminal UI
+python:
+  name: Python
+  description: |
+    Python related resources
+
+tui:
+  name: TUI (Terminal UI)
+  description: |
+    Resources for Terminal UI.
+
+testing:
+  name: Testing
+  description: |
+    Resources to help with the process of testing your code.
 ---
 - name: rich
   link: https://rich.readthedocs.io/en/stable/introduction.html
-  tags: [Python, Tui]
+  tags: [python, tui]
   description: >
     Create beautiful CLI's using Python
 
 - name: pytest
   link: https://docs.pytest.org/en/7.1.x/
-  tags: [Python, Testing]
+  tags: [python, testing]
   description: >
     The most popular Python testing framework
