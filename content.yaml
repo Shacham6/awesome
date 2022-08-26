@@ -107,6 +107,14 @@ github:
 actions:
   name: Actions
 
+open-source:
+  name: Open-Source
+
+bash:
+  name: Bash
+
+cheatsheet:
+  name: Cheat-Sheet
 ---
 - name: Python Enchancement Proposals - Index
   link: https://peps.python.org/
@@ -533,3 +541,97 @@ actions:
 - name: Awesome Actions
   link: https://github.com/sdras/awesome-actions
   tags: [github, actions, awesome-list]
+
+- name: myfreelogomaker
+  description: A website to generate logos that look good. Adi used it for my personal projects.
+  link: https://myfreelogomaker.com/
+  tags: [open-source, app]
+
+- name: Keep A Changelog
+  description: A reference for a Changelog file.
+  link: https://keepachangelog.com/en/1.0.0/
+  tags: [open-source, guides]
+
+- name: Semver
+  description: The __manifesto__ of semantic-versioning.
+  link: https://semver.org/
+  tags: [open-source, guides]
+
+- name: Choose a License
+  description: Describes in relative ease the different licenses found in Open-Source projects.
+  link: https://choosealicense.com/
+  tags: [open-source, app]
+
+- name: System Design Primer
+  description: A GitHub repository that provides lessons on systems design.
+  link: ttps://github.com/donnemartin/system-design-primer
+  tags: [guides]
+
+- name: ml-ops.org
+  link: https://ml-ops.org/
+  description: A website detailing stuff about mlops. Just guessing it's popular to do it's leading position on Google's search results.
+  tags: [data-science]
+
+- name: MLOPs Primer
+  link: https://github.com/dair-ai/MLOPs-Primer
+  description: A Github repository in the same vein as System Design Primer.
+  tags: [data-science, guides]
+
+- name: Bash Cheatsheet
+  link: https://devhints.io/bash
+  description: A good cheatsheet for doing stuff in Bash (and Zsh).
+  tags: [bash, cheatsheet]
+
+- name: Regexr
+  link: https://regexr.com/
+  description: A great site to build, test and learn Regex.
+  tags: [open-source, app]
+
+- name: "0.1 + 0.2 == 0.3000000004"
+  link: https://0.30000000000000004.com/
+  description: Great example about how floating points work.
+  tags: [app]
+
+- name: Learn X in Y minutes
+  link: https://learnxinyminutes.com/
+  description: A great website to quickly learn programming languages and stuff, relatively quickly. Works as a cheatsheet.
+  tags: [cheatsheet]
+
+- name: "`jq` Cheatsheet"
+  link: https://lzone.de/cheat-sheet/jq
+  description: A cheatsheet for all `jq` features
+  tags: [jq, cheatsheet]
+
+- name: "`jq` Playground"
+  link: https://jqplay.org/
+  description: A place to test `jq` queries.
+  tags: [jq, app]
+
+- name: JSON Lines
+  link: https://jsonlines.org/
+  description: A format which is basically "streamable" json.
+  tags: [json]
+
+- name: ndjson
+  link: http://ndjson.org/
+  description: Another format which is basically "streamable" json. Looks identical to JSON Lines.
+  tags: [json]
+
+- name: Advanced YAML syntax cheatsheet
+  link: https://www.educative.io/blog/advanced-yaml-syntax-cheatsheet
+  tags: [yaml]
+
+- name: Tutorial
+  description: Official GraphQL tutorial.
+  link: https://graphql.org/learn/
+  tags: [graphql, guide]
+
+- name: pyo3
+  description: Rust <-> Python bindings
+  link: https://github.com/PyO3/pyo3
+  tags: [rust, python]
+
+- name: LeetDesign
+  description: System Design Practice Problems
+  link: https://leetdesign.com/
+  tags: [guide]
