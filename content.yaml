@@ -95,6 +95,12 @@ package-management:
 concurrency:
   name: Concurrency
 
+makefile:
+  name: Makefile
+
+article:
+  name: Articles
+
 ---
 - name: Python Enchancement Proposals - Index
   link: https://peps.python.org/
@@ -454,3 +460,37 @@ concurrency:
 - name: Pyroscope
   link: https://pyroscope.io/
   tags: [python, profiler]
+
+- name: Rustlings
+  link: https://github.com/rust-lang/rustlings
+  tags: [rust, exercises]
+
+- name: Rust Design Patterns - Idioms
+  link: https://rust-unofficial.github.io/patterns/idioms/index.html
+  description: An unofficial document describing Rust best practices and idioms.
+  tags: [rust, guides]
+
+- name: "Rust Is Hard, Or: The Misery of Mainstream Programming"
+  link: https://hirrolot.github.io/posts/rust-is-hard-or-the-misery-of-mainstream-programming.html
+  tags: [rust, article]
+
+- name: inline_python
+  link: https://docs.rs/inline-python/latest/inline_python/
+  tags: [rust, python]
+
+- name: scrawl
+  link: https://github.com/xvrqt/scrawl
+  description: A library that opens a user's text editor and returns the results as a string
+  tags: [rust, cli]
+
+- name: lib.rs
+  link: https://lib.rs
+  tags: [rust]
+
+- name: maturin
+  link: https://github.com/PyO3/maturin
+  tags: [rust, python]
+
+- name: Makefile Tutorial
+  link: https://makefiletutorial.com/
+  tags: [makefile, guides]
