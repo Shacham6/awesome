@@ -16,11 +16,12 @@ testing:
 - name: rich
   link: https://rich.readthedocs.io/en/stable/introduction.html
   tags: [python, tui]
-  description: >
-    Create beautiful CLI's using Python
+  description: |
+    Create beautiful CLI's using Python.
+    Absolutely incredible.
 
 - name: pytest
   link: https://docs.pytest.org/en/7.1.x/
   tags: [python, testing]
   description: >
-    The most popular Python testing framework
+    The most popular Python testing framework.
