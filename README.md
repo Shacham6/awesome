@@ -4,10 +4,15 @@ This is more for me, but if you find this list useful, cheers.
 
 ---
 # Python
+> Python related resources
+
 ## Tui
+> Resources for Terminal UI
+
 - **[rich](https://rich.readthedocs.io/en/stable/introduction.html)**
   > Create beautiful CLI's using Python
 
 ## Testing
+> 
 - **[pytest](https://docs.pytest.org/en/7.1.x/)**
   > The most popular Python testing framework

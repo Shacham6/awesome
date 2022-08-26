@@ -1,0 +1,29 @@
+name: Render
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  render-and-push:
+    name: Render And Push
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Setup PDM
+        uses: pdm-project/setup-pdm@main
+        with:
+          python-version: "3.10"
+
+      - name: Install Dependencies
+        run: pdm install
+
+      - name: Render
+        run: pdm run render
+
+      - name: Commit and Push
+        run: >
+          git add README.md && git commit -m "Rendered README.md" && git push origin master
