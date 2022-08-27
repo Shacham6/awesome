@@ -1,1 +1,2 @@
-* <dl><dt><a href="{{link}}">{{name}}</a></dt><dd> {%if description -%}{{ description }}{%- endif -%} </dd></dl>
+* <a href="{{link}}">{{name}}</a>
+    {%if description -%}{{ "\n    ".join(description.splitlines()) }}{%- endif -%}
