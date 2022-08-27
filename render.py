@@ -9,14 +9,17 @@ import visitor
 from specs import AwesomeListFile
 
 __ROOT = pathlib.Path(__file__).parent
-__TEMPLATES_DIR = __ROOT / "templates2"
+__TEMPLATES_DIR = __ROOT / "templates"
 __SPECS_DIR = __ROOT / "specs"
 
 __TEMPLATES = Environment(loader=FileSystemLoader(__TEMPLATES_DIR))
 
+MANIFEST = yaml.safe_load(pathlib.Path("manifest.yaml").read_text("utf-8"))
+
 
 def read_awesome_lists() -> Iterable[AwesomeListFile]:
-    for spec_file in __SPECS_DIR.glob("*.yaml"):
+    for spec_file in MANIFEST["specs"]:
+        spec_file = pathlib.Path(spec_file)
         content = AwesomeListFile.parse_obj(
             yaml.safe_load(spec_file.read_text("utf-8"))
         )
