@@ -24,9 +24,12 @@ def read_awesome_lists() -> Iterable[AwesomeListFile]:
 
 
 def main():
+    buffers = []
     for awesome_list in read_awesome_lists():
         res = awesome_list.accept(visitor.MarkdownRenderer(__TEMPLATES))
-        print(res)
+        buffers.append(res)
+
+    pathlib.Path("README.md").write_text("\n---\n".join(buffers), "utf-8")
 
 
 if __name__ == "__main__":
