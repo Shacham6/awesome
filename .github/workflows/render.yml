@@ -7,7 +7,7 @@ on:
 
     paths:
       - templates/**
-      - content.yaml
+      - specs/*.yaml
 
 jobs:
   render-and-push:

@@ -33,4 +33,4 @@ dev = [
 
 
 [tool.pdm.scripts]
-render = "python pack.py"
+render = "python render.py"

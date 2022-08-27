@@ -1,78 +1,39 @@
 import pathlib
-from typing import List, Mapping, Tuple, TypedDict, cast
+from typing import Iterable
 
-import jinja2
 import yaml
+from jinja2 import Environment, FileSystemLoader
+from rich import print
 
-templates = jinja2.Environment(
-    loader=jinja2.FileSystemLoader(pathlib.Path(__file__).parent.joinpath("templates"))
-)
+import visitor
+from specs import AwesomeListFile
 
-block_template = templates.get_template("block.jinja2")
+__ROOT = pathlib.Path(__file__).parent
+__TEMPLATES_DIR = __ROOT / "templates"
+__SPECS_DIR = __ROOT / "specs"
 
+__TEMPLATES = Environment(loader=FileSystemLoader(__TEMPLATES_DIR))
 
-class ContentItem(TypedDict):
-    name: str
-    description: str
-    tags: List[str]
-
-
-header_details, content_spec = cast(
-    Tuple[
-        Mapping[str, str],
-        List[ContentItem],
-    ],
-    yaml.safe_load_all(
-        pathlib.Path(__file__).parent.joinpath("content.yaml").read_text("utf-8")
-    ),
-)
-
-groups = {}
-
-for item in content_spec:
-    g = groups
-    if not item["tags"]:
-        g = g.setdefault("Rest", {})
-    for p in item["tags"]:
-        g = g.setdefault(p, {})
-    group_items = g.setdefault("_items", [])
-    group_items.append(item)
+MANIFEST = yaml.safe_load(pathlib.Path("manifest.yaml").read_text("utf-8"))
 
 
-md_content = [
-    "# Shacham's Awesome List",
-    "This is my awesome list, for various things.",
-    "This is more for me, but if you find this list useful, cheers.",
-    "",
-    "---",
-]
-
-
-def walk(group_name, group: dict, level=1):
-    # md_content.append(f"{'#' * level} {group_name}")
-    # md_content.append(header_details.get(group_name, ""))
-
-    md_content.append(
-        templates.get_template("header.jinja2").render(
-            {
-                # "name": group_name,
-                "name": group_name,
-                "level": level,
-                # "description": header_details.get(group_name, ""),
-                **header_details.get(group_name, {}),
-            }
+def read_awesome_lists() -> Iterable[AwesomeListFile]:
+    for spec_file in MANIFEST["specs"]:
+        spec_file = pathlib.Path(spec_file)
+        content = AwesomeListFile.parse_obj(
+            yaml.safe_load(spec_file.read_text("utf-8"))
         )
-    )
-
-    for item in group.pop("_items", []):
-        # md_content.append(f"- {item['name']} - {item['description']}")
-        md_content.append(block_template.render(item))
-
-    for inner_group_name, inner_group in group.items():
-        walk(inner_group_name, inner_group, level + 1)
+        yield content
 
 
-for group_name, group in groups.items():
-    walk(group_name, group)
+def main():
+    buffers = []
+    for awesome_list in read_awesome_lists():
+        res = awesome_list.accept(visitor.MarkdownRenderer(__TEMPLATES))
+        buffers.append(res)
 
-pathlib.Path("README.md").write_text("\n".join(md_content), encoding="utf-8")
+    pathlib.Path("README.md").write_text("\n---\n".join(buffers), "utf-8")
+
+
+if __name__ == "__main__":
+    main()
