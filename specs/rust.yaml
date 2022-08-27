@@ -5,6 +5,8 @@ header:
 
 items:
   - name: Guides/Learn Rust
+    description: >
+      Want to learn Rust? Check out these!
     children:
     - name: Rustlings
       link: https://github.com/rust-lang/rustlings
