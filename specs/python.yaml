@@ -71,326 +71,328 @@ items:
         link: https://github.com/carlosperate/awesome-pyproject
         levels: [awesome-list]
 
-  - name: MetaProgramming
+  - name: Packages
     children:
-      - name: ast_selector
-        description: A package which allows __CSS selector style__ querying on Python AST's
-        link: https://github.com/guilatrova/ast_selector
-        levels: [metaprogramming]
+    - name: MetaProgramming
+      children:
+        - name: ast_selector
+          description: A package which allows __CSS selector style__ querying on Python AST's
+          link: https://github.com/guilatrova/ast_selector
+          levels: [metaprogramming]
 
-      - name: datamodel-code-generator
-        description: Generates python code from schemas.
-        link: https://github.com/koxudaxi/datamodel-code-generator
-        levels: [metaprogramming]
+        - name: datamodel-code-generator
+          description: Generates python code from schemas.
+          link: https://github.com/koxudaxi/datamodel-code-generator
+          levels: [metaprogramming]
 
-      - name: prestring
-        description: A utility package to generate valid Pythonic Source-Code.
-        link: https://pypi.org/project/prestring/
-        levels: [metaprogramming]
+        - name: prestring
+          description: A utility package to generate valid Pythonic Source-Code.
+          link: https://pypi.org/project/prestring/
+          levels: [metaprogramming]
 
-  - name: Functional Programming
-    children:
-      - name: Pipe
-        link: https://github.com/JulienPalard/Pipe
-        description: A Python library to use infix notations in Python
-        levels: [functional-programming]
+    - name: Functional Programming
+      children:
+        - name: Pipe
+          link: https://github.com/JulienPalard/Pipe
+          description: A Python library to use infix notations in Python
+          levels: [functional-programming]
 
-  - name: Command-Line Interface
-    children:
-      - name: Rich
-        description: Make beautiful CLI applications, very easily.
-        link: https://github.com/Textualize/rich
-        levels: [cli]
+    - name: Command-Line Interface
+      children:
+        - name: Rich
+          description: Make beautiful CLI applications, very easily.
+          link: https://github.com/Textualize/rich
+          levels: [cli]
 
-  - name: Terminal User-Interface
-    children:
-      - name: Textual
-        description: A TUI abstraction over Rich. Looks awesome!
-        link: https://github.com/Textualize/textual
-        levels: [tui]
+    - name: Terminal User-Interface
+      children:
+        - name: Textual
+          description: A TUI abstraction over Rich. Looks awesome!
+          link: https://github.com/Textualize/textual
+          levels: [tui]
 
-      - name: pyTermTk
-        description: A Python TUI library. Not Textual. Still seemingly cool looking. Has graphs and stuff.
-        link: https://github.com/ceccopierangiolieugenio/pyTermTk
-        levels: [tui]
+        - name: pyTermTk
+          description: A Python TUI library. Not Textual. Still seemingly cool looking. Has graphs and stuff.
+          link: https://github.com/ceccopierangiolieugenio/pyTermTk
+          levels: [tui]
 
-  - name: HTTP
-    children:
-      - name: httpx
-        description: My favorite http client.
-        link: https://www.python-httpx.org/
-        levels: [http, client]
+    - name: HTTP
+      children:
+        - name: httpx
+          description: My favorite http client.
+          link: https://www.python-httpx.org/
+          levels: [http, client]
 
-      - name: requests
-        description: The most known HTTP client for Python.
-        link: https://pypi.org/project/requests/
-        levels: [http, client]
+        - name: requests
+          description: The most known HTTP client for Python.
+          link: https://pypi.org/project/requests/
+          levels: [http, client]
 
-      - name: aiohttp
-        description: Another popular http package w/ async support.
-        link: https://docs.aiohttp.org/en/stable/
-        levels: [http, client]
+        - name: aiohttp
+          description: Another popular http package w/ async support.
+          link: https://docs.aiohttp.org/en/stable/
+          levels: [http, client]
 
-      - name: FastAPI
-        description: |
-          The most popular modern HTTP framework for Python as far as I know.
-            - Supports OpenAPI generation and stuff.
-            - Fast w/ async support.
-            - Integrates well with Pydantic.
-        link: https://fastapi.tiangolo.com/
-        levels: [http, server]
+        - name: FastAPI
+          description: |
+            The most popular modern HTTP framework for Python as far as I know.
+              - Supports OpenAPI generation and stuff.
+              - Fast w/ async support.
+              - Integrates well with Pydantic.
+          link: https://fastapi.tiangolo.com/
+          levels: [http, server]
 
-  - name: Data Science
-    children:
-      - name: streamlit
-        description: Let's you turn data scripts into sharable web apps. Not a self-hosted service.
-        link: https://github.com/streamlit/streamlit
-        levels: [data-science]
+    - name: Data Science
+      children:
+        - name: streamlit
+          description: Let's you turn data scripts into sharable web apps. Not a self-hosted service.
+          link: https://github.com/streamlit/streamlit
+          levels: [data-science]
 
-  - name: Data Serialization
-    children:
-      - name: Pydantic
-        link: https://pydantic-docs.helpmanual.io/
-        description: The most popular data-serialization framework for Python, as far as I know.
-        levels: [data-serialization]
+    - name: Data Serialization
+      children:
+        - name: Pydantic
+          link: https://pydantic-docs.helpmanual.io/
+          description: The most popular data-serialization framework for Python, as far as I know.
+          levels: [data-serialization]
 
-      - name: dill
-        link: https://pypi.org/project/dill/
-        description: An extension of python's `pickle` module. Pretty popular.
-        levels: [data-serialization]
+        - name: dill
+          link: https://pypi.org/project/dill/
+          description: An extension of python's `pickle` module. Pretty popular.
+          levels: [data-serialization]
 
-      - name: oyaml
-        link: https://github.com/wimglenn/oyaml
-        description: YAML package that maintains the order of keys
-        levels: [data-serialization, yaml]
+        - name: oyaml
+          link: https://github.com/wimglenn/oyaml
+          description: YAML package that maintains the order of keys
+          levels: [data-serialization, yaml]
 
-  - name: Testing
-    children:
-      - name: pytest
-        link: https://docs.pytest.org/en/7.1.x/
-        description: The de-facto testing framework for Python
-        levels: [testing, pytest]
+    - name: Testing
+      children:
+        - name: pytest
+          link: https://docs.pytest.org/en/7.1.x/
+          description: The de-facto testing framework for Python
+          levels: [testing, pytest]
 
-      - name: pytest-monitor
-        link: https://pypi.org/project/pytest-monitor/
-        levels: [testing, pytest]
+        - name: pytest-monitor
+          link: https://pypi.org/project/pytest-monitor/
+          levels: [testing, pytest]
 
-      - name: pytest-profiling
-        link: https://github.com/man-group/pytest-plugins/tree/master/pytest-profiling
-        levels: [testing, pytest]
+        - name: pytest-profiling
+          link: https://github.com/man-group/pytest-plugins/tree/master/pytest-profiling
+          levels: [testing, pytest]
 
-      - name: Awesome Pytest
-        description: A list of `pytest` resources.
-        link: https://github.com/augustogoulart/awesome-pytest
-        levels: [testing, pytest]
+        - name: Awesome Pytest
+          description: A list of `pytest` resources.
+          link: https://github.com/augustogoulart/awesome-pytest
+          levels: [testing, pytest]
 
-      - name: pytest-subsets
-        description: Looks like a way to "split" a test into "segments"; With each being reported separately.
-        link: https://github.com/pytest-dev/pytest-subtests
-        levels: [testing, pytest]
+        - name: pytest-subsets
+          description: Looks like a way to "split" a test into "segments"; With each being reported separately.
+          link: https://github.com/pytest-dev/pytest-subtests
+          levels: [testing, pytest]
 
-      - name: pytest-benchmark
-        link: https://github.com/ionelmc/pytest-benchmark
-        levels: [testing, pytest]
+        - name: pytest-benchmark
+          link: https://github.com/ionelmc/pytest-benchmark
+          levels: [testing, pytest]
 
-      - name: ward
-        description: An interesting, alternative testing-framework for Python. All things considered I'd have preferred this one if pytest wasn't already the clear winner..
-        link: https://github.com/darrenburns/ward
-        levels: [testing]
+        - name: ward
+          description: An interesting, alternative testing-framework for Python. All things considered I'd have preferred this one if pytest wasn't already the clear winner..
+          link: https://github.com/darrenburns/ward
+          levels: [testing]
 
-  - name: Profiler
-    children:
-      - name: memray
-        link: https://github.com/bloomberg/memray
-        description: A suddenly incredibly popular memory profiler.
-          It was initially private as far as I know, and soon after it was released to the public it became immensely popular, very quickly.
-        levels: [profiler]
+    - name: Profiler
+      children:
+        - name: memray
+          link: https://github.com/bloomberg/memray
+          description: A suddenly incredibly popular memory profiler.
+            It was initially private as far as I know, and soon after it was released to the public it became immensely popular, very quickly.
+          levels: [profiler]
 
-      - name: line-profiler
-        link: https://pypi.org/project/line-profiler/
-        levels: [profiler]
+        - name: line-profiler
+          link: https://pypi.org/project/line-profiler/
+          levels: [profiler]
 
-      - name: memory-profiler
-        link: https://pypi.org/project/memory-profiler
-        levels: [profiler]
+        - name: memory-profiler
+          link: https://pypi.org/project/memory-profiler
+          levels: [profiler]
 
-      - name: PyPerf
-        description: Toolkit to write, run and analyze benchmarks. Same idea as `Py-Spy`, but from kernel-space.
-        levels: [profiler]
+        - name: PyPerf
+          description: Toolkit to write, run and analyze benchmarks. Same idea as `Py-Spy`, but from kernel-space.
+          levels: [profiler]
 
-      - name: py-spy
-        description: sampling profiler for Python programs.
-        levels: [profiler]
+        - name: py-spy
+          description: sampling profiler for Python programs.
+          levels: [profiler]
 
-      - name: Pyroscope
-        link: https://pyroscope.io/
-        levels: [profiler]
+        - name: Pyroscope
+          link: https://pyroscope.io/
+          levels: [profiler]
 
-  - name: Formatter
-    children:
-      - name: black
-        link: https://github.com/psf/black
-        description: The currently most popular automatic formatter for Python.
-          Really rigid, but that's a "feature".
-        levels: [formatter]
+    - name: Formatter
+      children:
+        - name: black
+          link: https://github.com/psf/black
+          description: The currently most popular automatic formatter for Python.
+            Really rigid, but that's a "feature".
+          levels: [formatter]
 
-  - name: Linter
-    children:
-      - name: pylint
-        link: https://pylint.pycqa.org/en/latest/index.html
-        description:
-          The pretty-much most popular linter for Python. Is __very__ involved in the code.
-          Will be effective **only if used pragmatically**.
-        levels: [lint, pylint]
+    - name: Linter
+      children:
+        - name: pylint
+          link: https://pylint.pycqa.org/en/latest/index.html
+          description:
+            The pretty-much most popular linter for Python. Is __very__ involved in the code.
+            Will be effective **only if used pragmatically**.
+          levels: [lint, pylint]
 
-      - name: Pylint Message Control
-        link: https://pylint.pycqa.org/en/latest/user_guide/messages/message_control.html
-        levels: [lint, pylint]
+        - name: Pylint Message Control
+          link: https://pylint.pycqa.org/en/latest/user_guide/messages/message_control.html
+          levels: [lint, pylint]
 
-      - name: Flake8
-        description: A popular Python linter that's more focused on coding conventions.
-        link: https://flake8.pycqa.org/en/latest/
-        levels: [lint]
+        - name: Flake8
+          description: A popular Python linter that's more focused on coding conventions.
+          link: https://flake8.pycqa.org/en/latest/
+          levels: [lint]
 
-  - name: Security
-    children:
-      - name: PyUP
-        description: Python Dependency Security real-time service. Kinda like `snyk` from my understanding.
-        link: https://pyup.io/
-        levels: [security]
+    - name: Security
+      children:
+        - name: PyUP
+          description: Python Dependency Security real-time service. Kinda like `snyk` from my understanding.
+          link: https://pyup.io/
+          levels: [security]
 
-      - name: Bandit
-        description: A security linter from PyCQA
-        link: https://github.com/PyCQA/bandit
-        levels: [lint]
+        - name: Bandit
+          description: A security linter from PyCQA
+          link: https://github.com/PyCQA/bandit
+          levels: [lint]
 
-  - name: Files & Filesystems
-    children:
-      - name: watchfiles
-        description: A package to watch changes in local directory.
-        link: https://pypi.org/project/watchfiles/
-        levels: [files]
+    - name: Files & Filesystems
+      children:
+        - name: watchfiles
+          description: A package to watch changes in local directory.
+          link: https://pypi.org/project/watchfiles/
+          levels: [files]
 
-      - name: magicalimport
-        description: Importing a module from physical file path.
-        link: https://pypi.org/project/magicalimport/
-        levels: [files]
+        - name: magicalimport
+          description: Importing a module from physical file path.
+          link: https://pypi.org/project/magicalimport/
+          levels: [files]
 
-      - name: pox
-        description: A collection of utilities for navigating and manipulating filesystems.
-        link: https://pypi.org/project/pox/
-        levels: [files]
+        - name: pox
+          description: A collection of utilities for navigating and manipulating filesystems.
+          link: https://pypi.org/project/pox/
+          levels: [files]
 
-      - name: pathspec
-        description: A utility library for pattern matching of file paths. So far this only includes Git’s wildmatch pattern matching which itself is derived from Rsync’s wildmatch.
-        link: https://pypi.org/project/pathspec/
-        levels: [files]
+        - name: pathspec
+          description: A utility library for pattern matching of file paths. So far this only includes Git’s wildmatch pattern matching which itself is derived from Rsync’s wildmatch.
+          link: https://pypi.org/project/pathspec/
+          levels: [files]
 
-  - name: Documentation
-    children:
-      - name: mkdocs
-        description: The best documentation generator for Programming Projects.
-          Written in Python. Has a sweet GitHub-Pages integration.
-        link: https://github.com/mkdocs/mkdocs
-        levels: [docs, mkdocs]
+    - name: Documentation
+      children:
+        - name: mkdocs
+          description: The best documentation generator for Programming Projects.
+            Written in Python. Has a sweet GitHub-Pages integration.
+          link: https://github.com/mkdocs/mkdocs
+          levels: [docs, mkdocs]
 
-      - name: mkdocstrings
-        description: Automatic documentation from sources, for MkDocs.
-        link: https://github.com/mkdocstrings/mkdocstrings
-        levels: [docs, mkdocs]
+        - name: mkdocstrings
+          description: Automatic documentation from sources, for MkDocs.
+          link: https://github.com/mkdocstrings/mkdocstrings
+          levels: [docs, mkdocs]
 
-      - name: mkdocs-click
-        description: Generate mkdocs pages from `click` apps.
-        link: https://pypi.org/project/mkdocs-click/
-        levels: [docs, mkdocs]
+        - name: mkdocs-click
+          description: Generate mkdocs pages from `click` apps.
+          link: https://pypi.org/project/mkdocs-click/
+          levels: [docs, mkdocs]
 
-      - name: interrogate
-        description: Validates that all of the things are documented?
-        link: https://github.com/econchick/interrogate
-        levels: [docs]
+        - name: interrogate
+          description: Validates that all of the things are documented?
+          link: https://github.com/econchick/interrogate
+          levels: [docs]
 
-  - name: Tasks
-    children:
-      - name: huey
-        description: A small Task-Queue for Python
-        link: https://github.com/coleifer/huey
-        levels: [tasks]
+    - name: Tasks
+      children:
+        - name: huey
+          description: A small Task-Queue for Python
+          link: https://github.com/coleifer/huey
+          levels: [tasks]
 
-      - name: rocketry
-        description: A scheduling framework for Python. Strives for simplicity.
-        link: https://github.com/Miksus/rocketry
-        levels: [tasks]
+        - name: rocketry
+          description: A scheduling framework for Python. Strives for simplicity.
+          link: https://github.com/Miksus/rocketry
+          levels: [tasks]
 
-  - name: Concurrency
-    children:
-      - name: pathos
-        description: _"parallel graph management and execution in heterogeneous computing"_
-        link: https://pathos.readthedocs.io/en/latest/index.html
-        levels: [concurrency]
+    - name: Concurrency
+      children:
+        - name: pathos
+          description: _"parallel graph management and execution in heterogeneous computing"_
+          link: https://pathos.readthedocs.io/en/latest/index.html
+          levels: [concurrency]
 
-      - name: mpire
-        description: "`M`ulti`P`rocessing `I`s `R`eally `E`asy - Another concurrency package for Python"
-        link: https://github.com/Slimmer-AI/mpire
-        levels: [concurrency]
+        - name: mpire
+          description: "`M`ulti`P`rocessing `I`s `R`eally `E`asy - Another concurrency package for Python"
+          link: https://github.com/Slimmer-AI/mpire
+          levels: [concurrency]
 
-  - name: Refactoring
-    children:
-      - name: pasta
-        description: A Python refactoring tool based on the `ast` module. Comes in the form of an SDK.
-        link: https://github.com/google/pasta
-        levels: [refactoring]
+    - name: Refactoring
+      children:
+        - name: pasta
+          description: A Python refactoring tool based on the `ast` module. Comes in the form of an SDK.
+          link: https://github.com/google/pasta
+          levels: [refactoring]
 
-  - name: Meta
-    children:
-      - name: objgraph
-        description: A module that lets you visually explore Python object graphs.
-        link: https://mg.pov.lt/objgraph/
-        levels: [meta]
+    - name: Meta
+      children:
+        - name: objgraph
+          description: A module that lets you visually explore Python object graphs.
+          link: https://mg.pov.lt/objgraph/
+          levels: [meta]
 
-  - name: Applications
-    children:
-      - name: dunk
-        description: Prettier git diffs.
-        link: https://github.com/darrenburns/dunk
-        levels: [app]
+    - name: Applications
+      children:
+        - name: dunk
+          description: Prettier git diffs.
+          link: https://github.com/darrenburns/dunk
+          levels: [app]
 
-      - name: mypyc
-        description: Compiled Python code to a Python extension.
-          Based on type hinting. Seems to actually work!
-        link: https://mypyc.readthedocs.io/en/latest/getting_started.html#installation
-        levels: [app]
+        - name: mypyc
+          description: Compiled Python code to a Python extension.
+            Based on type hinting. Seems to actually work!
+          link: https://mypyc.readthedocs.io/en/latest/getting_started.html#installation
+          levels: [app]
 
-      - name: Pokete
-        description: It's a Pokemon, but in a terminal.
-        link: https://github.com/lxgr-linux/pokete
-        levels: [app]
+        - name: Pokete
+          description: It's a Pokemon, but in a terminal.
+          link: https://github.com/lxgr-linux/pokete
+          levels: [app]
 
-      - name: Dinghy
-        description: A GitHub activity digest tool.
-        link: https://pypi.org/project/dinghy/
-        levels: [app]
+        - name: Dinghy
+          description: A GitHub activity digest tool.
+          link: https://pypi.org/project/dinghy/
+          levels: [app]
 
-  - name: APIs and Integrations
-    children:
-      - name: Jira
-        description: A client for Jira.
-        link: https://pypi.org/project/jira/
-        levels: [client]
+    - name: APIs and Integrations
+      children:
+        - name: Jira
+          description: A client for Jira.
+          link: https://pypi.org/project/jira/
+          levels: [client]
 
-  - name: Package Management
-    children:
-      - name: pip-review
-        link: https://pypi.org/project/pip-review/
-        levels: [package-management]
+    - name: Package Management
+      children:
+        - name: pip-review
+          link: https://pypi.org/project/pip-review/
+          levels: [package-management]
 
-      - name: pip-run
-        description: Run one-off Python scripts that have requirements (defined inlined)
-        link: https://github.com/jaraco/pip-run
-        levels: [package-management]
+        - name: pip-run
+          description: Run one-off Python scripts that have requirements (defined inlined)
+          link: https://github.com/jaraco/pip-run
+          levels: [package-management]
 
-      - name: distlib
-        link: https://github.com/pypa/distlib
-        levels: [package-management]
+        - name: distlib
+          link: https://github.com/pypa/distlib
+          levels: [package-management]
 
   - name: Misc.
     description: >
