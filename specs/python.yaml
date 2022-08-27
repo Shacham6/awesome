@@ -41,36 +41,6 @@ items:
         link: https://rednafi.github.io/reflections/variance-of-generic-types-in-python.html
         levels: [guides]
 
-      - name: What's dictproxy?
-        link: https://stackoverflow.com/questions/25440694/whats-the-purpose-of-dictproxy
-        levels: [guides]
-
-      - name: Instagram - Copy-on-write friendly Python garbage collection
-        link: https://instagram-engineering.com/copy-on-write-friendly-python-garbage-collection-ad6ed5233ddf
-        levels: [guides]
-
-      - name: "Python Decorators - Cool Example Tweet"
-        link: https://twitter.com/nedbat/status/1543933895514591237?t=4jd5Q3dKPkOC6lsREeklQA&s=09
-        levels: [guides]
-
-      - name: Did you know that the Python 🐍 `functools.reduce` and `itertools.accumulate` are related?
-        link: https://twitter.com/mathsppblog/status/1556555347413852163?t=1jRlyQuEV3FQXITcQUdszg&s=09
-        levels: [guides]
-
-      - name: How I added C-style for-loops to Python
-        link: https://sadh.life/post/cursed-for/?s=09
-        levels: [guides]
-
-  - name: Awesome Lists
-    children:
-      - name: Awesome Python AST
-        link: https://github.com/gyermolenko/awesome-python-ast
-        levels: [awesome-list]
-
-      - name: Awesome pyproject
-        link: https://github.com/carlosperate/awesome-pyproject
-        levels: [awesome-list]
-
   - name: Packages
     children:
     - name: MetaProgramming
@@ -393,6 +363,39 @@ items:
         - name: distlib
           link: https://github.com/pypa/distlib
           levels: [package-management]
+
+  - name: Awesome Lists
+    children:
+      - name: Awesome Python AST
+        link: https://github.com/gyermolenko/awesome-python-ast
+        levels: [awesome-list]
+
+      - name: Awesome pyproject
+        link: https://github.com/carlosperate/awesome-pyproject
+        levels: [awesome-list]
+
+  - name: Articles
+    description: Some reading material I wanted to get to.
+    children:
+      - name: What's dictproxy?
+        link: https://stackoverflow.com/questions/25440694/whats-the-purpose-of-dictproxy
+        levels: [guides]
+
+      - name: Instagram - Copy-on-write friendly Python garbage collection
+        link: https://instagram-engineering.com/copy-on-write-friendly-python-garbage-collection-ad6ed5233ddf
+        levels: [guides]
+
+      - name: "Python Decorators - Cool Example Tweet"
+        link: https://twitter.com/nedbat/status/1543933895514591237?t=4jd5Q3dKPkOC6lsREeklQA&s=09
+        levels: [guides]
+
+      - name: Did you know that the Python 🐍 `functools.reduce` and `itertools.accumulate` are related?
+        link: https://twitter.com/mathsppblog/status/1556555347413852163?t=1jRlyQuEV3FQXITcQUdszg&s=09
+        levels: [guides]
+
+      - name: How I added C-style for-loops to Python
+        link: https://sadh.life/post/cursed-for/?s=09
+        levels: [guides]
 
   - name: Misc.
     description: >
