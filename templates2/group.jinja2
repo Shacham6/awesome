@@ -1,0 +1,6 @@
+{{ '#' * level }} {{ name }}
+{% if description -%}
+{{ description }}
+{% endif -%}
+
+{{ handle(children) }}

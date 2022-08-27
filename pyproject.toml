@@ -3,7 +3,13 @@ name = "shach_awesome"
 version = "0.0.1"
 description = "Builder for Shacham's awesome list."
 
-dependencies = ["mistletoe>=0.9.0", "pyyaml>=6.0", "jinja2>=3.1.2"]
+dependencies = [
+    "mistletoe>=0.9.0",
+    "pyyaml>=6.0",
+    "jinja2>=3.1.2",
+    "mistune>=2.0.4",
+    "pydantic>=1.9.2",
+]
 requires-python = ">=3.10"
 license = { text = "MIT" }
 
@@ -19,8 +25,12 @@ build-backend = "pdm.pep517.api"
 [tool.pdm]
 
 [tool.pdm.dev-dependencies]
-dev = ["pylint>=2.14.5", "black>=22.6.0"]
+dev = [
+    "pylint>=2.14.5",
+    "black>=22.6.0",
+    "rich>=12.5.1",
+]
 
 
 [tool.pdm.scripts]
-render = "python render.py"
+render = "python pack.py"
