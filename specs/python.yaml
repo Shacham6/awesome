@@ -5,9 +5,9 @@ header:
     which prioritizes readability.
 
 items:
-  - name: Misc.
+  - name: References
     description: >
-      Stuff that doesn't fit anywhere else.
+      Globally relevant Python information.
     children:
       - name: Python Enchancement Proposals - Index
         link: https://peps.python.org/
@@ -16,19 +16,6 @@ items:
         description: An actual list of all legitimate classifiers to be used in Python packages.
         link: https://pypi.org/pypi?%3Aaction=list_classifiers
 
-      - name: undataclass
-        link: https://www.pythonmorsels.com/undataclass/?s=09
-        description: Given a definitions of `dataclasses.dataclass`, expose the generated source-code.
-
-      - name: C vs Golang Python extension performance
-        link: https://ipdata.co/blog/c-vs-golang-python-extensions/
-
-      - name: The Bas Steins newsletter
-        description: A newsletter that mentions multiple Python GitHub repositories. Like weekly "trending" for Python.
-        link: https://bas.codes/
-
-      - name: Pandas Alternatives
-        link: https://towardsdatascience.com/8-alternatives-to-pandas-for-processing-large-datasets-928fc927b08c
 
   - name: Guides
     children:
@@ -404,3 +391,21 @@ items:
       - name: distlib
         link: https://github.com/pypa/distlib
         levels: [package-management]
+
+  - name: Misc.
+    description: >
+      Stuff that doesn't fit anywhere else.
+    children:
+      - name: undataclass
+        link: https://www.pythonmorsels.com/undataclass/?s=09
+        description: Given a definitions of `dataclasses.dataclass`, expose the generated source-code.
+
+      - name: C vs Golang Python extension performance
+        link: https://ipdata.co/blog/c-vs-golang-python-extensions/
+
+      - name: The Bas Steins newsletter
+        description: A newsletter that mentions multiple Python GitHub repositories. Like weekly "trending" for Python.
+        link: https://bas.codes/
+
+      - name: Pandas Alternatives
+        link: https://towardsdatascience.com/8-alternatives-to-pandas-for-processing-large-datasets-928fc927b08c
