@@ -6,6 +6,8 @@ header:
 
 items:
   - name: Misc.
+    description: >
+      Stuff that doesn't fit anywhere else.
     children:
       - name: Python Enchancement Proposals - Index
         link: https://peps.python.org/

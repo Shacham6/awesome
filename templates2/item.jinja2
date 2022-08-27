@@ -1,0 +1,13 @@
+{%- if False -%}
+- [ {{ name }} ](<{{link}}>)
+  {%-if description -%}{{ description }}{%- endif -%}
+{%- else -%}
+
+- <dl> <dt> <a href="{{link}}">{{name}}</a></dt>
+<dd>
+
+{%if description -%}{{ description }}{%- endif -%}
+
+</dd>
+</dl>
+{%- endif-%}

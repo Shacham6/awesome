@@ -1,14 +1,15 @@
 import pathlib
-from typing import Iterable, Mapping
+from typing import Iterable
 
 import yaml
 from jinja2 import Environment, FileSystemLoader
 from rich import print
 
+import visitor
 from specs import AwesomeListFile
 
 __ROOT = pathlib.Path(__file__).parent
-__TEMPLATES_DIR = __ROOT / "templates"
+__TEMPLATES_DIR = __ROOT / "templates2"
 __SPECS_DIR = __ROOT / "specs"
 
 __TEMPLATES = Environment(loader=FileSystemLoader(__TEMPLATES_DIR))
@@ -24,7 +25,8 @@ def read_awesome_lists() -> Iterable[AwesomeListFile]:
 
 def main():
     for awesome_list in read_awesome_lists():
-        print(awesome_list)
+        res = awesome_list.accept(visitor.MarkdownRenderer(__TEMPLATES))
+        print(res)
 
 
 if __name__ == "__main__":
