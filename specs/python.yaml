@@ -122,6 +122,11 @@ items:
         link: https://github.com/Textualize/textual
         levels: [tui]
 
+      - name: pyTermTk
+        description: A Python TUI library. Not Textual. Still seemingly cool looking. Has graphs and stuff.
+        link: https://github.com/ceccopierangiolieugenio/pyTermTk
+        levels: [tui]
+
   - name: HTTP
     children:
       - name: httpx
@@ -228,6 +233,10 @@ items:
 
       - name: py-spy
         description: sampling profiler for Python programs.
+        levels: [profiler]
+
+      - name: Pyroscope
+        link: https://pyroscope.io/
         levels: [profiler]
 
   - name: Formatter
@@ -369,6 +378,11 @@ items:
         link: https://github.com/lxgr-linux/pokete
         levels: [app]
 
+      - name: Dinghy
+        description: A GitHub activity digest tool.
+        link: https://pypi.org/project/dinghy/
+        levels: [app]
+
   - name: APIs and Integrations
     children:
       - name: Jira
@@ -376,29 +390,17 @@ items:
         link: https://pypi.org/project/jira/
         levels: [client]
 
-  - name: pip-review
-    link: https://pypi.org/project/pip-review/
-    levels: [package-management]
+  - name: Package Management
+    children:
+      - name: pip-review
+        link: https://pypi.org/project/pip-review/
+        levels: [package-management]
 
-  - name: pip-run
-    description: Run one-off Python scripts that have requirements (defined inlined)
-    link: https://github.com/jaraco/pip-run
-    levels: [package-management]
+      - name: pip-run
+        description: Run one-off Python scripts that have requirements (defined inlined)
+        link: https://github.com/jaraco/pip-run
+        levels: [package-management]
 
-  - name: Dinghy
-    description: A GitHub activity digest tool.
-    link: https://pypi.org/project/dinghy/
-    levels: [app]
-
-  - name: distlib
-    link: https://github.com/pypa/distlib
-    levels: [package-management]
-
-  - name: pyTermTk
-    description: A Python TUI library. Not Textual. Still seemingly cool looking. Has graphs and stuff.
-    link: https://github.com/ceccopierangiolieugenio/pyTermTk
-    levels: [tui]
-
-  - name: Pyroscope
-    link: https://pyroscope.io/
-    levels: [profiler]
+      - name: distlib
+        link: https://github.com/pypa/distlib
+        levels: [package-management]
