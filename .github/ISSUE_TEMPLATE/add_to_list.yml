@@ -12,15 +12,18 @@ body:
     attributes:
       label: Name of the Item
       description: Name of the Item
-      placeholder: ""
+      placeholder: name
 
   - type: textarea
     id: description
     attributes:
       label: Item description
       description: Describe the thing
+      placeholder: description
 
   - type: input
     id: link
     attributes:
       label: Link for the item
+      description: Link for the item
+      placeholder: link
