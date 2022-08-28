@@ -1,0 +1,26 @@
+name: Item Request
+description: Request adding something to the awesome list
+title: "[Item Request]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Good on you for wanting to add to the list!
+
+  - type: input
+    id: name
+    attributes:
+      label: Name of the Item
+      description: Name of the Item
+      placeholder: ""
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Item description
+      description: Describe the thing
+
+  - type: input
+    id: link
+    attributes:
+      label: Link for the item
