@@ -49,6 +49,9 @@ Globally relevant Python information.
 * <a href="https://pypi.org/project/dill/">dill</a> - An extension of python's `pickle` module. Pretty popular.
 * <a href="https://github.com/wimglenn/oyaml">oyaml</a> - YAML package that maintains the order of keys
 
+### Debugging
+* <a href="https://github.com/alexmojaki/snoop">snoop</a> - A tracing/debugging toolkit thingy. I'm not sure exactly what, but it's cool.
+
 ### Testing
 * <a href="https://docs.pytest.org/en/7.1.x/">pytest</a> - The de-facto testing framework for Python
 * <a href="https://pypi.org/project/pytest-monitor/">pytest-monitor</a> 
@@ -65,6 +68,7 @@ Globally relevant Python information.
 * <a href="None">PyPerf</a> - Toolkit to write, run and analyze benchmarks. Same idea as `Py-Spy`, but from kernel-space.
 * <a href="None">py-spy</a> - sampling profiler for Python programs.
 * <a href="https://pyroscope.io/">Pyroscope</a> 
+* <a href="https://github.com/nschloe/tuna">Tuna</a> - A viewer for those `cProfile` thing, that looks different from `snakeviz`.
 
 ### Formatter
 * <a href="https://github.com/psf/black">black</a> - The currently most popular automatic formatter for Python. Really rigid, but that's a "feature".
@@ -105,6 +109,7 @@ Globally relevant Python information.
 * <a href="https://mg.pov.lt/objgraph/">objgraph</a> - A module that lets you visually explore Python object graphs.
 
 ### Applications
+* <a href="https://github.com/chubin/cheat.sh">cheat.sh</a> - Unified access to the best community driven cheat sheets repositories of the world.
 * <a href="https://github.com/darrenburns/dunk">dunk</a> - Prettier git diffs.
 * <a href="https://mypyc.readthedocs.io/en/latest/getting_started.html#installation">mypyc</a> - Compiled Python code to a Python extension. Based on type hinting. Seems to actually work!
 * <a href="https://github.com/lxgr-linux/pokete">Pokete</a> - It's a Pokemon, but in a terminal.
@@ -115,6 +120,7 @@ Globally relevant Python information.
 
 ### Package Management
 * <a href="https://pypi.org/project/pip-review/">pip-review</a> 
+* <a href="https://github.com/thebjorn/pydeps">pydeps</a> - Python module dependency visualization
 * <a href="https://github.com/jaraco/pip-run">pip-run</a> - Run one-off Python scripts that have requirements (defined inlined)
 * <a href="https://github.com/pypa/distlib">distlib</a> 
 
