@@ -136,6 +136,12 @@ items:
           description: YAML package that maintains the order of keys
           levels: [data-serialization, yaml]
 
+    - name: Debugging
+      children:
+        - name: snoop
+          description: A tracing/debugging toolkit thingy. I'm not sure exactly what, but it's cool.
+          link: https://github.com/alexmojaki/snoop
+
     - name: Testing
       children:
         - name: pytest
@@ -197,6 +203,10 @@ items:
         - name: Pyroscope
           link: https://pyroscope.io/
           levels: [profiler]
+
+        - name: Tuna
+          description: A viewer for those `cProfile` thing, that looks different from `snakeviz`.
+          link: https://github.com/nschloe/tuna
 
     - name: Formatter
       children:
@@ -321,6 +331,10 @@ items:
 
     - name: Applications
       children:
+        - name: cheat.sh
+          description: Unified access to the best community driven cheat sheets repositories of the world.
+          link: https://github.com/chubin/cheat.sh
+
         - name: dunk
           description: Prettier git diffs.
           link: https://github.com/darrenburns/dunk
@@ -353,16 +367,17 @@ items:
       children:
         - name: pip-review
           link: https://pypi.org/project/pip-review/
-          levels: [package-management]
+
+        - name: pydeps
+          description: Python module dependency visualization
+          link: https://github.com/thebjorn/pydeps
 
         - name: pip-run
           description: Run one-off Python scripts that have requirements (defined inlined)
           link: https://github.com/jaraco/pip-run
-          levels: [package-management]
 
         - name: distlib
           link: https://github.com/pypa/distlib
-          levels: [package-management]
 
   - name: Awesome Lists
     children:
